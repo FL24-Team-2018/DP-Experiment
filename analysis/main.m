@@ -508,7 +508,7 @@ readout = [];
 %Sigma_um_min = 27;
 %Sigma_um_max = 27;
 %Sigma_um_array = [Sigma_um-5:1:Sigma_um+2];
-Sigma_um_array = [Sigma_um_min:1:Sigma_um_max];
+%Sigma_um_array = [Sigma_um_min:1:Sigma_um_max];
 Sigma_um_array = [Sigma_um];
 %
 
