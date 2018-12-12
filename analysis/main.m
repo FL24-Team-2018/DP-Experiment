@@ -84,6 +84,8 @@ xi_um_26T2300_18nm_ver_L = [ 455.3644, 680.2117, 780.5904, 794.6978, 779.6730, 1
 for i=1:length(xi_um_26T2300_18nm_ver_L)
     zeta_26T2300_18nm_ver_L(i) = globalcoherence(xi_um_26T2300_18nm_ver_L(i), FWHM2sigma(2400));
 end
+zeta_26T2300_18nm_ver_L_mean = nanmean(zeta_26T2300_18nm_ver_L);
+zeta_26T2300_18nm_ver_L_std = nanstd(zeta_26T2300_18nm_ver_L);
 
 % horizontally:  FWHM approx 2mm
 %wavelength_nm = 18.0; pixis_centerx_px = 450; pixis_centery_px = 437; Sigma_um = 58; Sigma_um_min=55; Sigma_um_max=65;  d_um = 107; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0107um (2c) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_2c_d_107.0_E_048.16_average.mat'));
@@ -92,15 +94,20 @@ end
 %wavelength_nm = 18.0; pixis_centerx_px = 502; pixis_centery_px = 429; Sigma_um = 17; Sigma_um_min=13; Sigma_um_max=35; d_um = 890; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0890um (2d) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_2d_d_890.0_E_048.06_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 493; pixis_centery_px = 430; Sigma_um = 15; Sigma_um_min=10; Sigma_um_max=20; d_um = 1047; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 1047um (3d) ap5=7.0 ap7=50.0 (bg3ab#1) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_3d_d_1047.0_E_047.86_average.mat'));
 %%% chopered data! pixis_centerx_px = 470; pixis_centery_px = 430; Sigma_um = 15; Sigma_um_min=10; Sigma_um_max=35; d_um = 1335; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 1335um (4d) ap5=7.0 ap7=50.0 (bg4cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_4d_d_1335.0_E_047.92_average.mat'));
-d_um_26T2300_18nm_hor_L = [ 107, 215, 322, 890, 1047 ];
+d_um_26T2300_18nm_hor_L = [ 107, 215, 322, NaN, 890, 1047, NaN ];
 d_FWHM_26T2300_18nm_hor_L = d_um_26T2300_18nm_hor_L / 2400;
-xi_um_26T2300_18nm_hor_L = [ 332.2753, 922.0736, 904.3329, 1.0239e+03, 1.1251e+03 ];
-
+xi_um_26T2300_18nm_hor_L = [ 332.2753, 922.0736, 904.3329, NaN, 1.0239e+03, 1.1251e+03, NaN ];
 for i=1:length(xi_um_26T2300_18nm_hor_L)
     zeta_26T2300_18nm_hor_L(i) = globalcoherence(xi_um_26T2300_18nm_hor_L(i), FWHM2sigma(2400));
 end
+zeta_26T2300_18nm_hor_L_mean = nanmean(zeta_26T2300_18nm_hor_L);
+zeta_26T2300_18nm_hor_L_std = nanstd(zeta_26T2300_18nm_hor_L);
 
-
+for i=1:length(xi_um_26T2300_18nm_hor_L)
+    zeta_26T2300_18nm_L(i) = zeta_26T2300_18nm_ver_L(i) * zeta_26T2300_18nm_hor_L(i);
+end
+zeta_26T2300_18nm_L_mean = nanmean(zeta_26T2300_18nm_L);
+zeta_26T2300_18nm_L_std = nanstd(zeta_26T2300_18nm_L);
 
 %%% 2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm
 % vertically: 
@@ -112,13 +119,14 @@ end
 %wavelength_nm = 18.0; pixis_centerx_px = 455; pixis_centery_px = 472; Sigma_um = 51; d_um = 707; Sigma_um_min=38; Sigma_um_max=55;  load(strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0707um (1b) ap5=7.0 ap7=1.5 (bg1ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_1b_d_707.0_E_047.84_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 374; pixis_centery_px = 483; Sigma_um = 39; d_um = 890; Sigma_um_min=25; Sigma_um_max=55;  load(strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0890um (2b) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T2300.h5_ph_2b_d_890.0_E_047.93_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 500; pixis_centery_px = 400; Sigma_um = 36; d_um = 1047; Sigma_um_min=30; Sigma_um_max=40;  load(strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 1047um (3b) ap5=7.0 ap7=1.5 (bg3ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_3b_d_1047.0_E_047.78_average.mat'));
-d_um_26T2300_18nm_ver_S = [ 50, 107, 215, 322, 445, 707, 890, 1047 ];
+d_um_26T2300_18nm_ver_S = [ 50, 107, 215, 322, 445, 707, 890, 1047, NaN ];
 d_FWHM_26T2300_18nm_ver_S = d_um_26T2300_18nm_ver_S / (2400/2);
-xi_um_26T2300_18nm_ver_S = [ 266.7286,  467.7301, 564.8696, 477.9354, 386.9892, 328.1238, 427.3350, 470.8618 ];
-
+xi_um_26T2300_18nm_ver_S = [ 266.7286,  467.7301, 564.8696, 477.9354, 386.9892, 328.1238, 427.3350, 470.8618, NaN ];
 for i=1:length(xi_um_26T2300_18nm_ver_S)
     zeta_26T2300_18nm_ver_S(i) = globalcoherence(xi_um_26T2300_18nm_ver_S(i), FWHM2sigma(2400/2));
 end
+zeta_26T2300_18nm_ver_S_mean = nanmean(zeta_26T2300_18nm_ver_S);
+zeta_26T2300_18nm_ver_S_std = nanstd(zeta_26T2300_18nm_ver_S);
 
 % horizontally:
 %wavelength_nm = 18.0; pixis_centerx_px = 474; pixis_centery_px = 493; Sigma_um = 57; d_um = 50; Sigma_um_min=50; Sigma_um_max=60;  load(strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0050um (1c#2) ap5=7.0 ap7=1.5 (bg1ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_1c#2_d_50.0_E_047.74_average.mat'));
@@ -129,41 +137,65 @@ end
 %wavelength_nm = 18.0; pixis_centerx_px = 374; pixis_centery_px = 467; Sigma_um = 27; d_um = 890; Sigma_um_min=10; Sigma_um_max=35;  load(strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0890um (2d) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T2300.h5_ph_2d_d_890.0_E_047.88_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 530; pixis_centery_px = 490; Sigma_um = 21; d_um = 1047; Sigma_um_min=15; Sigma_um_max=35;  load(strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 1047um (3d) ap5=7.0 ap7=1.5 (bg3ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_3d_d_1047.0_E_047.67_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 530; pixis_centery_px = 450; Sigma_um = 19; d_um = 1335; Sigma_um_min=15; Sigma_um_max=23;  load(strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 1335um (4d) ap5=7.0 ap7=1.5 (bg4ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_4d_d_1335.0_E_047.80_average.mat'));
-d_um_26T2300_18nm_hor_S = [ 50, 215, 322, 445, 707, 890, 1047, 1335 ];
+d_um_26T2300_18nm_hor_S = [ 50, NaN, 215, 322, 445, 707, 890, 1047, 1335 ];
 d_FWHM_26T2300_18nm_hor_S = d_um_26T2300_18nm_hor_S / (2400/2);
-xi_um_26T2300_18nm_hor_S = [ 313.1795, 680.4464, 471.8095, 650.6023, 729.7264, 625.6716, 802.7694, 886.0035 ];
-
+xi_um_26T2300_18nm_hor_S = [ 313.1795, NaN, 680.4464, 471.8095, 650.6023, 729.7264, 625.6716, 802.7694, 886.0035 ];
 for i=1:length(xi_um_26T2300_18nm_hor_S)
     zeta_26T2300_18nm_hor_S(i) = globalcoherence(xi_um_26T2300_18nm_hor_S(i), FWHM2sigma(2400/2));
 end
+zeta_26T2300_18nm_hor_S_mean = nanmean(zeta_26T2300_18nm_hor_S);
+zeta_26T2300_18nm_hor_S_std = nanstd(zeta_26T2300_18nm_hor_S);
+
+for i=1:length(xi_um_26T2300_18nm_hor_S)
+    zeta_26T2300_18nm_S(i) = zeta_26T2300_18nm_ver_S(i) * zeta_26T2300_18nm_hor_S(i);
+end
+zeta_26T2300_18nm_S_mean = nanmean(zeta_26T2300_18nm_S);
+zeta_26T2300_18nm_S_std = nanstd(zeta_26T2300_18nm_S);
 
 
+zeta_26T2300_18nm_ver_mean = nanmean([zeta_26T2300_18nm_ver_S,zeta_26T2300_18nm_ver_L]);
+zeta_26T2300_18nm_ver_std = nanstd([zeta_26T2300_18nm_ver_S,zeta_26T2300_18nm_ver_L]);
+
+zeta_26T2300_18nm_hor_mean = nanmean([zeta_26T2300_18nm_hor_S,zeta_26T2300_18nm_hor_L]);
+zeta_26T2300_18nm_hor_std = nanstd([zeta_26T2300_18nm_hor_S,zeta_26T2300_18nm_hor_L]);
+
+zeta_26T2300_18nm_mean = zeta_26T2300_18nm_ver_mean * zeta_26T2300_18nm_ver_mean;
+zeta_26T2300_18nm_error = zeta_26T2300_18nm_mean *( zeta_26T2300_18nm_hor_std/zeta_26T2300_18nm_hor_mean + zeta_26T2300_18nm_ver_std/zeta_26T2300_18nm_ver_mean ) ;
 
 %%% 2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 
 %%% THIS is actually at the PMMA focus!
 % vertically:
 %wavelength_nm = 8.0; pixis_centerx_px = 534; pixis_centery_px = 436; Sigma_um = 25; Sigma_um_min=10; Sigma_um_max=35; d_um = 107; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0107um (2a#2-Nb197) ap5=7.0 ap7=50.0 (bg2ab-Nb197)/FLASH2_USER1-2017-11-27T1101.h5_ph_2a#2_d_107.0_E_040.04_average.mat'));
 %wavelength_nm = 8.0; pixis_centerx_px = 508; pixis_centery_px = 410; Sigma_um = 24; Sigma_um_min=10; Sigma_um_max=35; d_um = 322; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0322um (4a-none) ap5=7.0 ap7=50.0 (bg3cd-none)/FLASH2_USER1-2017-11-27T1101.h5_ph_4a_d_322.0_E_041.64_average.mat'));
-d_um_27T1529_8nm_ver_L = [ 107, 322 ];
+d_um_27T1529_8nm_ver_L = [ 107, NaN, 322, NaN ];
 d_FWHM_27T1529_8nm_ver_L = d_um_27T1529_8nm_ver_L / 2100;
-xi_um_27T1529_8nm_ver_L = [ 311.2682, 307.6950 ];
+xi_um_27T1529_8nm_ver_L = [ 311.2682, NaN, 307.6950, NaN ];
 
 for i=1:length(xi_um_27T1529_8nm_ver_L)
     zeta_27T1529_8nm_ver_L(i) = globalcoherence(xi_um_27T1529_8nm_ver_L(i), FWHM2sigma(2100));
 end
+zeta_27T1529_8nm_ver_L_mean = nanmean(zeta_27T1529_8nm_ver_L);
+zeta_27T1529_8nm_ver_L_std = nanstd(zeta_27T1529_8nm_ver_L);
 
 % horizontally:
 %wavelength_nm = 8.0; pixis_centerx_px = 524; pixis_centery_px = 488; Sigma_um = 24; Sigma_um_min=20; Sigma_um_max=30; d_um = 107; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0107um (2c-Nb197) ap5=7.0 ap7=50.0 (bg2ab-Nb197)/FLASH2_USER1-2017-11-27T1101.h5_ph_2c_d_107.0_E_041.38_average.mat'));
 %wavelength_nm = 8.0; pixis_centerx_px = 685; pixis_centery_px = 490; Sigma_um = 16; Sigma_um_min=10; Sigma_um_max=35; d_um = 215; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0215um (3c#1-none) ap5=7.0 ap7=50.0 (bg3cd-none)/FLASH2_USER1-2017-11-27T1101.h5_ph_3c#1_d_215.0_E_037.60_average.mat'));
 %wavelength_nm = 8.0; pixis_centerx_px = 570; pixis_centery_px = 480; Sigma_um = 13; Sigma_um_min=10; Sigma_um_max=35; d_um = 890; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0890um (2d#1-Nb197) ap5=7.0 ap7=50.0 (bg2ab-Nb197)/FLASH2_USER1-2017-11-27T1101.h5_ph_2d#1_d_890.0_E_039.84_average.mat'));
-d_um_27T1529_8nm_hor_L = [ 107, 215, 890 ];
+d_um_27T1529_8nm_hor_L = [ 107, 215, NaN, 890 ];
 d_FWHM_27T1529_8nm_hor_L = d_um_27T1529_8nm_hor_L / 1700;
-xi_um_27T1529_8nm_hor_L = [ 351.0928, 497.5362, 702.4303 ];
-
+xi_um_27T1529_8nm_hor_L = [ 351.0928, 497.5362, NaN, 702.4303 ];
 for i=1:length(xi_um_27T1529_8nm_hor_L)
     zeta_27T1529_8nm_hor_L(i) = globalcoherence(xi_um_27T1529_8nm_hor_L(i), FWHM2sigma(1700));
 end
+zeta_27T1529_8nm_hor_L_mean = nanmean(zeta_27T1529_8nm_hor_L);
+zeta_27T1529_8nm_hor_L_std = nanstd(zeta_27T1529_8nm_hor_L);
 
+
+for i=1:length(xi_um_27T1529_8nm_hor_L)
+    zeta_27T1529_8nm_L(i) = zeta_27T1529_8nm_ver_L(i) * zeta_27T1529_8nm_hor_L(i);
+end
+zeta_27T1529_8nm_L_mean = nanmean(zeta_27T1529_8nm_L);
+zeta_27T1529_8nm_L_std = nanstd(zeta_27T1529_8nm_L);
 
 
 %%% 2017-11-27T1529 8.0nm 45uJ 12Und. KOAS=PMMA
@@ -179,19 +211,39 @@ xi_um_27T1529_8nm_ver_S = [ 247.6399, 273.6594, 180.0854, 171.7345 ];
 for i=1:length(xi_um_27T1529_8nm_ver_S)
     zeta_27T1529_8nm_ver_S(i) = globalcoherence(xi_um_27T1529_8nm_ver_S(i), FWHM2sigma(2100/2));
 end
+zeta_27T1529_8nm_ver_S_mean = nanmean(zeta_27T1529_8nm_ver_S);
+zeta_27T1529_8nm_ver_S_std = nanstd(zeta_27T1529_8nm_ver_S);
+
 
 % horizontally:
 %wavelength_nm = 8.0; pixis_centerx_px = 557; pixis_centery_px = 529; Sigma_um = 20; Sigma_um_min=10; Sigma_um_max=35; d_um = 215; load(strcat(datapath,'2017-11-27T1529 8.0nm 45uJ 12Und. KOAS=PMMA 0215um (3c) ap5=7.0 ap7=50.0 (bg3cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-27T1529.h5_ph_3c_d_215.0_E_039.98_average.mat'));
 %wavelength_nm = 8.0; pixis_centerx_px = 421; pixis_centery_px = 509; Sigma_um = 23; Sigma_um_min=10; Sigma_um_max=35; d_um = 445; load(strcat(datapath,'2017-11-27T1529 8.0nm 45uJ 12Und. KOAS=PMMA 0445um (5c) ap5=7.0 ap7=50.0 (bg5ab) ap5=7.0 ap7=50.0  /FLASH2_USER1-2017-11-27T1529.h5_ph_5c_d_445.0_E_042.04_average.mat'));
 %wavelength_nm = 8.0; pixis_centerx_px = 501; pixis_centery_px = 528; Sigma_um = 21; Sigma_um_min=10; Sigma_um_max=35; d_um = 707; load(strcat(datapath,'2017-11-27T1529 8.0nm 45uJ 12Und. KOAS=PMMA 0707um (1d) ap5=7.0 ap7=50.0 (bg1cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-27T1529.h5_ph_1d_d_707.0_E_040.91_average.mat'));
-d_um_27T1529_8nm_hor_S = [ 215, 445, 707 ];
+d_um_27T1529_8nm_hor_S = [ 215, NaN, 445, 707 ];
 d_FWHM_27T1529_8nm_hor_S = d_um_27T1529_8nm_hor_S / (1700/2);
-xi_um_27T1529_8nm_hor_S = [ 373.8574, 321.9275, 352.4699 ];
+xi_um_27T1529_8nm_hor_S = [ 373.8574, NaN, 321.9275, 352.4699 ];
 for i=1:length(xi_um_27T1529_8nm_hor_S)
     zeta_27T1529_8nm_hor_S(i) = globalcoherence(xi_um_27T1529_8nm_hor_S(i), FWHM2sigma(1700/2));
 end
+zeta_27T1529_8nm_hor_S_mean = nanmean(zeta_27T1529_8nm_hor_S);
+zeta_27T1529_8nm_hor_S_std = nanstd(zeta_27T1529_8nm_hor_S);
 
 
+for i=1:length(xi_um_27T1529_8nm_hor_S)
+    zeta_27T1529_8nm_S(i) = zeta_27T1529_8nm_ver_S(i) * zeta_27T1529_8nm_hor_S(i);
+end
+zeta_27T1529_8nm_S_mean = nanmean(zeta_27T1529_8nm_S);
+zeta_27T1529_8nm_S_std = nanstd(zeta_27T1529_8nm_S);
+
+
+zeta_27T1529_8nm_ver_mean = nanmean([zeta_27T1529_8nm_ver_S,zeta_27T1529_8nm_ver_L]);
+zeta_27T1529_8nm_ver_std = nanstd([zeta_27T1529_8nm_ver_S,zeta_27T1529_8nm_ver_L]);
+
+zeta_27T1529_8nm_hor_mean = nanmean([zeta_27T1529_8nm_hor_S,zeta_27T1529_8nm_hor_L]);
+zeta_27T1529_8nm_hor_std = nanstd([zeta_27T1529_8nm_hor_S,zeta_27T1529_8nm_hor_L]);
+
+zeta_27T1529_8nm_mean = zeta_27T1529_8nm_ver_mean * zeta_27T1529_8nm_ver_mean;
+zeta_27T1529_8nm_error = zeta_27T1529_8nm_mean *( zeta_27T1529_8nm_hor_std/zeta_27T1529_8nm_hor_mean + zeta_27T1529_8nm_ver_std/zeta_27T1529_8nm_ver_mean ) ;
 
 %%% 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm
 % vertically:
@@ -203,13 +255,16 @@ end
 %wavelength_nm = 13.5; pixis_centerx_px = 486; pixis_centery_px = 520; Sigma_um = 37; Sigma_um_min=15; Sigma_um_max=40; d_um = 322; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0322um (4a#1) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_4a#1_d_322.0_E_107.45_average.mat'));
 %wavelength_nm = 13.5; pixis_centerx_px = 526; pixis_centery_px = 523; Sigma_um = 37; Sigma_um_min=15; Sigma_um_max=40; d_um = 322; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0322um (4a#2) ap5=8.8 ap7=3.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_4a#2_d_322.0_E_110.23_average.mat'));
 %wavelength_nm = 13.5; pixis_centerx_px = 556; pixis_centery_px = 500; Sigma_um = 27; Sigma_um_min=15; Sigma_um_max=40; d_um = 707; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0707um (1b#1) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm (bg1cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-29T1007.h5_ph_1b#1_d_707.0_E_112.92_average.mat'));
-d_um_29T1007_13p5nm_ver_S = [ 107, 215, 215, 322, 322, 707 ];
+d_um_29T1007_13p5nm_ver_S = [ NaN, 107, 215, 215, 322, 322, NaN, 707 ];
 d_FWHM_29T1007_13p5nm_ver_S = d_um_29T1007_13p5nm_ver_S / (1960/2);
-xi_um_29T1007_13p5nm_ver_S = [ 350.5551, 403.8876, 445.4800, 345.4695, 345.1456, 339.1556 ];
+xi_um_29T1007_13p5nm_ver_S = [ NaN, 350.5551, 403.8876, 445.4800, 345.4695, 345.1456, NaN, 339.1556 ];
 
 for i=1:length(xi_um_29T1007_13p5nm_ver_S)
     zeta_29T1007_13p5nm_ver_S(i) = globalcoherence(xi_um_29T1007_13p5nm_ver_S(i), FWHM2sigma(1960/2));
 end
+zeta_29T1007_13p5nm_ver_S_mean = nanmean(zeta_29T1007_13p5nm_ver_S);
+zeta_29T1007_13p5nm_ver_S_std = nanstd(zeta_29T1007_13p5nm_ver_S);
+
 % horizontally:
 %wavelength_nm = 13.5; pixis_centerx_px = 498; pixis_centery_px = 490; Sigma_um = 15; Sigma_um_min=10; Sigma_um_max=25; d_um = 50; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0050um (1c#1) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm (bg1cd) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_1c#1_d_50.0_E_111.73_average.mat')); 
 %%%?wavelength_nm = 13.5; pixis_centerx_px = 558; pixis_centery_px = 490; Sigma_um = 23; Sigma_um_min=15; Sigma_um_max=40; d_um = 107; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0107um (2c#1) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2c#1_d_107.0_E_104.53_average.mat'));
@@ -217,13 +272,22 @@ end
 %wavelength_nm = 13.5; pixis_centerx_px = 377; pixis_centery_px = 523; Sigma_um = 41; Sigma_um_min=15; Sigma_um_max=40; d_um = 322; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0322um (4c#1) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_4c#1_d_322.0_E_109.30_average.mat'));
 %wavelength_nm = 13.5; pixis_centerx_px = 539; pixis_centery_px = 523; Sigma_um = 35; Sigma_um_min=15; Sigma_um_max=40; d_um = 445; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0445um (5c#1) ap5=7.0 ap7=3.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm (bg5cd) ap5=8.8 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_5c#1_d_445.0_E_112.38_average.mat'));
 %wavelength_nm = 13.5; pixis_centerx_px = 556; pixis_centery_px = 500; Sigma_um = 33; Sigma_um_min=15; Sigma_um_max=40; d_um = 707; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0707um (1d#0) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm (bg1cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-29T1007.h5_ph_1d#0_d_707.0_E_106.39_average.mat'));
-d_um_29T1007_13p5nm_hor_S = [ 50, 215, 322, 445, 707 ];
+d_um_29T1007_13p5nm_hor_S = [ 50, NaN, 215, 215, 322, 322, 445, 707 ];
 d_FWHM_29T1007_13p5nm_hor_S = d_um_29T1007_13p5nm_hor_S / (2060/2);
-xi_um_29T1007_13p5nm_hor_S = [ 848.5169, 404.6551, 338.4204, 356.9162, 382.4135 ];
+xi_um_29T1007_13p5nm_hor_S = [ 848.5169, NaN, 404.6551, 404.6551, 338.4204, 338.4204, 356.9162, 382.4135 ];
 for i=1:length(xi_um_29T1007_13p5nm_hor_S)
     zeta_29T1007_13p5nm_hor_S(i) = globalcoherence(xi_um_29T1007_13p5nm_hor_S(i), FWHM2sigma(2060/2));
 end
+zeta_29T1007_13p5nm_hor_S_mean = nanmean(zeta_29T1007_13p5nm_hor_S);
+zeta_29T1007_13p5nm_hor_S_std = nanstd(zeta_29T1007_13p5nm_hor_S);
 
+
+for i=1:length(xi_um_29T1007_13p5nm_hor_S)
+    zeta_29T1007_13p5nm_S(i) = zeta_29T1007_13p5nm_ver_S(i) * zeta_29T1007_13p5nm_hor_S(i);
+end
+
+zeta_29T1007_13p5nm_S_mean = nanmean(zeta_29T1007_13p5nm_S);
+zeta_29T1007_13p5nm_S_std = nanstd(zeta_29T1007_13p5nm_S);
 
 %%% 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA
 % vertically:
@@ -236,14 +300,17 @@ end
 %wavelength_nm = 13.5; pixis_centerx_px = 480; pixis_centery_px = 480; Sigma_um = 29; Sigma_um_min=15; Sigma_um_max=38; d_um = 890; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0890um (2b#1) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2b#3_d_890.0_E_111.31_average.mat'));
 %??wavelength_nm = 13.5; pixis_centerx_px = 480; pixis_centery_px = 480; Sigma_um = 22; Sigma_um_min=15; Sigma_um_max=28; d_um = 890; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0890um (2b#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2b#4_d_890.0_E_112.95_average.mat'));
 %wavelength_nm = 13.5; pixis_centerx_px = 500; pixis_centery_px = 480; Sigma_um = 20; Sigma_um_min=15; Sigma_um_max=35; d_um = 1047; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 1047um (3b#3) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_3b#3_d_1047.0_E_106.60_average.mat'));
-FWHM_y_29T1007_13p5nm_ = 1960;
-d_um_29T1007_13p5nm_ver_L = [ 215, 445, 707, 890, 890, 1047 ]; 
-d_FWHM_29T1007_13p5nm_ver_L = d_um_29T1007_13p5nm_ver_L / FWHM_y_29T1007_13p5nm_;
-xi_um_29T1007_13p5nm_ver_L = [ 642.6470, 622.9184, 445.5118, 432.5878, 575.5449, 624.3753];
+FWHM_y_29T1007_13p5nm_ver_L = 1960;
+d_um_29T1007_13p5nm_ver_L = [ 215, NaN, 445, 707, 890, 890, 1047 ]; 
+d_FWHM_29T1007_13p5nm_ver_L = d_um_29T1007_13p5nm_ver_L / FWHM_y_29T1007_13p5nm_ver_L;
+xi_um_29T1007_13p5nm_ver_L = [ 642.6470, NaN, 622.9184, 445.5118, 432.5878, 575.5449, 624.3753];
 
-for i=1:length(xi_um_29T1007_13p5nm_ver_S)
-    zeta_29T1007_13p5nm_ver_L(i) = globalcoherence(xi_um_29T1007_13p5nm_ver_S(i), FWHM2sigma(1960));
+for i=1:length(xi_um_29T1007_13p5nm_ver_L)
+    zeta_29T1007_13p5nm_ver_L(i) = globalcoherence(xi_um_29T1007_13p5nm_ver_L(i), FWHM2sigma(1960));
 end
+zeta_29T1007_13p5nm_hor_L_mean = nanmean(zeta_29T1007_13p5nm_hor_L);
+zeta_29T1007_13p5nm_hor_L_std = nanstd(zeta_29T1007_13p5nm_hor_L);
+
 % horizontally:
 %wavelength_nm = 13.5; pixis_centerx_px = 532; pixis_centery_px = 550; Sigma_um = 29; d_um = 107; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0107um (2c#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2c#2_d_107.0_E_112.92_average.mat'));
 %wavelength_nm = 13.5; pixis_centerx_px = 557; pixis_centery_px = 530; Sigma_um = 25; d_um = 215; xi_um=505.1040; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0215um (3c#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_3c#2_d_215.0_E_107.29_average.mat'));
@@ -252,15 +319,33 @@ end
 %wavelength_nm = 13.5; pixis_centerx_px = 480; pixis_centery_px = 520; Sigma_um = 21; d_um = 707; xi_um=569.6138; load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0707um (1d) ap5=7.0 ap7=1.5 2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm (bg1ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-29T1007.h5_ph_1d#2_d_707.0_E_113.17_average.mat'));
 %wavelength_nm = 13.5; pixis_centerx_px = 500; pixis_centery_px = 500; Sigma_um = 21; d_um = 890; xi_um=598.1924;load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0890um (2d#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2d#2_d_890.0_E_115.11_average.mat'));
 %wavelength_nm = 13.5; pixis_centerx_px = 500; pixis_centery_px = 520; Sigma_um = 27; d_um = 1047; xi_um=463.4609;load(strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 1047um (3d#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_3d#2_d_1047.0_E_105.38_average.mat'));
-FWHM_x_29T1007_13p5nm_ = 2060;
-d_um_29T1007_13p5nm_hor_L = [ 215, 322, 445, 707, 890, 1047 ];
-d_FWHM_29T1007_13p5nm_hor_L = d_um_29T1007_13p5nm_hor_L / FWHM_x_29T1007_13p5nm_;
-xi_um_29T1007_13p5nm_hor_L = [ 505.1040, 630.3814, 624.3011, 569.6138, 598.1924, 463.4609 ];
-
+FWHM_x_29T1007_13p5nm_hor_L = 2060;
+d_um_29T1007_13p5nm_hor_L = [ 215, 322, 445, 707, 890, 890, 1047 ];
+d_FWHM_29T1007_13p5nm_hor_L = d_um_29T1007_13p5nm_hor_L / FWHM_x_29T1007_13p5nm_hor_L;
+xi_um_29T1007_13p5nm_hor_L = [ 505.1040, 630.3814, 624.3011, 569.6138, 598.1924, 598.1924, 463.4609 ];
 for i=1:length(xi_um_29T1007_13p5nm_hor_L)
     zeta_29T1007_13p5nm_hor_L(i) = globalcoherence(xi_um_29T1007_13p5nm_hor_L(i), FWHM2sigma(2060));
 end
+zeta_29T1007_13p5nm_ver_L_mean = nanmean(zeta_29T1007_13p5nm_ver_L);
+zeta_29T1007_13p5nm_ver_L_std = nanstd(zeta_29T1007_13p5nm_ver_L);
 
+d_um_29T1007_13p5nm_L = [ 215, 322, 445, 707, 890, 890, 1047 ];
+
+for i=1:length(d_um_29T1007_13p5nm_hor_L)
+    zeta_29T1007_13p5nm_L(i) = zeta_29T1007_13p5nm_L(i) * zeta_29T1007_13p5nm_L(i);
+end
+
+zeta_29T1007_13p5nm_L_mean = nanmean(zeta_29T1007_13p5nm_L);
+zeta_29T1007_13p5nm_L_std = nanstd(zeta_29T1007_13p5nm_L);
+
+zeta_29T1007_13p5nm_ver_mean = nanmean([zeta_29T1007_13p5nm_ver_S,zeta_29T1007_13p5nm_ver_L]);
+zeta_29T1007_13p5nm_ver_std = nanstd([zeta_29T1007_13p5nm_ver_S,zeta_29T1007_13p5nm_ver_L]);
+
+zeta_29T1007_13p5nm_ver_mean = nanmean([zeta_29T1007_13p5nm_hor_S,zeta_29T1007_13p5nm_hor_L]);
+zeta_29T1007_13p5nm_hor_std = nanstd([zeta_29T1007_13p5nm_hor_S,zeta_29T1007_13p5nm_hor_L]);
+
+zeta_29T1007_13p5nm_mean = zeta_29T1007_13p5nm_ver_mean * zeta_29T1007_13p5nm_ver_mean;
+zeta_29T1007_13p5nm_error = zeta_29T1007_13p5nm_mean *( zeta_29T1007_13p5nm_hor_std/zeta_29T1007_13p5nm_hor_mean + zeta_29T1007_13p5nm_ver_std/zeta_29T1007_13p5nm_ver_mean ) ;
 
 %% plot the coherence length and coherence degree over the pinhole separation
 figure('rend', 'painters','pos', [10 10 1000 1000]);
@@ -278,7 +363,7 @@ plot([0 1335],[0 1335], ':k');
 hold off
 ylim([0 1400])
 xlabel('separation / um'), ylabel('coherence length \xi / um');
-legend('FWHM_x=0.85mm','FWHM_x=1.05mm','FWHM_x=1.70mm','FWHM_x=2.10mm');
+legend('FWHM_y=0.85mm','FWHM_x=1.05mm','FWHM_y=1.70mm','FWHM_x=2.10mm','Orientation','horizontal','Location','best');
 title('\lambda=8nm E=45uJ #Undulators=12');
 
 subplot(3,3,4);
@@ -294,7 +379,7 @@ plot(d_FWHM_27T1529_8nm_hor_L, xi_um_27T1529_8nm_hor_L, '-or');
 hold off
 ylim([0 1400]); xlim([0 1.2]);
 xlabel('separation / FWHM'), ylabel('coherence length \xi / um');
-legend('FWHM_x=0.85mm','FWHM_x=1.05mm','FWHM_x=1.70mm','FWHM_x=2.10mm');
+legend('FWHM_y=0.85mm','FWHM_x=1.05mm','FWHM_y=1.70mm','FWHM_x=2.10mm','Orientation','horizontal','Location','best');
 title('\lambda=8nm E=45uJ #Undulators=12');
 
 
@@ -312,7 +397,7 @@ plot([0 1335],[0 1335], ':k')
 hold off
 ylim([0 1400]);
 xlabel('separation / um'), ylabel('coherence length \xi / um');
-legend('FWHM_x=1.00mm','FWHM_x=1.05mm','FWHM_x=2.00mm','FWHM_x=2.10mm');
+legend('FWHM_y=1.00mm','FWHM_x=1.05mm','FWHM_y=2.00mm','FWHM_x=2.10mm','Orientation','horizontal','Location','best');
 title('\lambda=13.5nm E=111uJ #Undulators=12');
 
 
@@ -330,7 +415,7 @@ hold on
 %hold off
 ylim([0 1400]); xlim([0 1.2]);
 xlabel('separation / FWHM'), ylabel('coherence length \xi / um');
-legend('FWHM_x=1.00mm','FWHM_x=1.05mm','FWHM_x=2.00mm','FWHM_x=2.10mm');
+legend('FWHM_y=1.00mm','FWHM_x=1.05mm','FWHM_y=2.00mm','FWHM_x=2.10mm','Orientation','horizontal','Location','best');
 title('\lambda=13.5nm E=111uJ #Undulators=12');
 
 
@@ -347,7 +432,7 @@ hold on
 plot(d_um_26T2300_18nm_ver_L, d_um_26T2300_18nm_ver_L, ':k');
 hold off
 xlabel('separation / um'), ylabel('coherence length \xi / um');
-legend('FWHM_x=1.20mm','FWHM_x=1.20mm','FWHM_x=2.40mm','FWHM_x=2.40mm');
+legend('FWHM_y=1.20mm','FWHM_x=1.20mm','FWHM_y=2.40mm','FWHM_x=2.40mm','Orientation','horizontal','Location','best');
 title('\lambda=18.0nm E=48uJ #Undulators=7');
 ylim([0 1400]);
 
@@ -361,67 +446,100 @@ hold on
 plot(d_FWHM_26T2300_18nm_ver_L, xi_um_26T2300_18nm_ver_L, '-ob');
 hold on
 plot(d_FWHM_26T2300_18nm_hor_L, xi_um_26T2300_18nm_hor_L, '-or');
+hold on
 hold off
 xlabel('separation / FWHM'), ylabel('coherence length \xi / um');
-legend('FWHM_x=1.20mm','FWHM_x=1.20mm','FWHM_x=2.40mm','FWHM_x=2.40mm');
+legend('FWHM_y=1.20mm','FWHM_x=1.20mm','FWHM_y=2.40mm','FWHM_x=2.40mm','Orientation','horizontal','Location','best');
 title('\lambda=18.0nm E=48uJ #Undulators=7');
 ylim([0 1400]); xlim([0 1.2]);
 
 
 %figure('rend', 'painters','pos', [510 10 500 500]);
 subplot(3,3,7);
-plot(d_FWHM_27T1529_8nm_ver_S, zeta_27T1529_8nm_ver_S, '-xb');
+plot(d_FWHM_27T1529_8nm_ver_S, zeta_27T1529_8nm_ver_S, 'xb');
 hold on
-plot(d_FWHM_27T1529_8nm_hor_S, zeta_27T1529_8nm_hor_S, '-xr');
+plot(d_FWHM_27T1529_8nm_hor_S, zeta_27T1529_8nm_hor_S, 'xr');
 hold on
-plot(d_FWHM_27T1529_8nm_ver_L, zeta_27T1529_8nm_ver_L, '-ob');
+plot(d_FWHM_27T1529_8nm_ver_L, zeta_27T1529_8nm_ver_L, 'ob');
 hold on
-plot(d_FWHM_27T1529_8nm_hor_L, zeta_27T1529_8nm_hor_L, '-or');
-%hold on
-%plot([0 1335],[0 1335], ':k');
+plot(d_FWHM_27T1529_8nm_hor_L, zeta_27T1529_8nm_hor_L, 'or');
+hold on
+plot([0,1.2], [zeta_27T1529_8nm_ver_mean,zeta_27T1529_8nm_ver_mean], '-b');
+plot([0,1.2], [zeta_27T1529_8nm_ver_mean+zeta_27T1529_8nm_ver_std,zeta_27T1529_8nm_ver_mean+zeta_27T1529_8nm_ver_std], ':b');
+plot([0,1.2], [zeta_27T1529_8nm_ver_mean-zeta_27T1529_8nm_ver_std,zeta_27T1529_8nm_ver_mean-zeta_27T1529_8nm_ver_std], ':b');
+hold on
+plot([0,1.2], [zeta_27T1529_8nm_hor_mean,zeta_27T1529_8nm_hor_mean], '-r');
+plot([0,1.2], [zeta_27T1529_8nm_hor_mean+zeta_27T1529_8nm_hor_std,zeta_27T1529_8nm_hor_mean+zeta_27T1529_8nm_hor_std], ':r');
+plot([0,1.2], [zeta_27T1529_8nm_hor_mean-zeta_27T1529_8nm_hor_std,zeta_27T1529_8nm_hor_mean-zeta_27T1529_8nm_hor_std], ':r');
 hold off
-ylim([0 0.6]); xlim([0 1.2]);
-xlabel('separation / FWHM'), ylabel('global degree of coherence \zeta');
-legend('FWHM_x=1.00mm','FWHM_x=1.05mm','FWHM_x=2.00mm','FWHM_x=2.10mm');
-title('\lambda=8nm E=45uJ #Undulators=12');
+ylim([0 0.8]); xlim([0 1.2]);
+xlabel('separation / FWHM'), ylabel('normalized degree of transverse coherence \zeta_{x,y}');
+legend('FWHM_y=1.00mm','FWHM_x=1.05mm','FWHM_y=2.00mm','FWHM_x=2.10mm','Orientation','horizontal','Location','best');
+title(strcat('\lambda=8nm E=45uJ #Undulators=12 \zeta_{x}=(',num2str(round(zeta_27T1529_8nm_hor_mean*100,0)),'\pm',num2str(round(zeta_27T1529_8nm_hor_std*100,0)),')% ',' \zeta_{y}=(',num2str(round(zeta_27T1529_8nm_ver_mean*100,0)),'\pm',num2str(round(zeta_27T1529_8nm_ver_std*100,0)), ')% \zeta=(',num2str(round(zeta_27T1529_8nm_mean*100,0)),'\pm',num2str(round(zeta_27T1529_8nm_error*100,0)),')%'));
 
 
 %figure('rend', 'painters','pos', [1010 10 500 500]);
 subplot(3,3,8);
-plot(d_FWHM_29T1007_13p5nm_ver_S, zeta_29T1007_13p5nm_ver_S, '-xb');
+plot(d_FWHM_29T1007_13p5nm_ver_S, zeta_29T1007_13p5nm_ver_S, 'xb');
 hold on
-plot(d_FWHM_29T1007_13p5nm_hor_S, zeta_29T1007_13p5nm_hor_S, '-xr');
+plot(d_FWHM_29T1007_13p5nm_hor_S, zeta_29T1007_13p5nm_hor_S, 'xr');
 hold on
-plot(d_FWHM_29T1007_13p5nm_ver_L, zeta_29T1007_13p5nm_ver_L, '-ob');
+plot(d_FWHM_29T1007_13p5nm_ver_L, zeta_29T1007_13p5nm_ver_L, 'ob');
 hold on
-plot(d_FWHM_29T1007_13p5nm_hor_L, zeta_29T1007_13p5nm_hor_L, '-or');
-%hold on
-%plot(d_um_26T2300_18nm_ver_L, d_um_26T2300_18nm_ver_L, ':k');
+plot(d_FWHM_29T1007_13p5nm_hor_L, zeta_29T1007_13p5nm_hor_L, 'or');
+hold on
+plot([0,1.2], [zeta_29T1007_13p5nm_ver_mean,zeta_29T1007_13p5nm_ver_mean], '-b');
+plot([0,1.2], [zeta_29T1007_13p5nm_ver_mean+zeta_29T1007_13p5nm_ver_std,zeta_29T1007_13p5nm_ver_mean+zeta_29T1007_13p5nm_ver_std], ':b');
+plot([0,1.2], [zeta_29T1007_13p5nm_ver_mean-zeta_29T1007_13p5nm_ver_std,zeta_29T1007_13p5nm_ver_mean-zeta_29T1007_13p5nm_ver_std], ':b');
+hold on
+plot([0,1.2], [zeta_29T1007_13p5nm_hor_mean,zeta_29T1007_13p5nm_hor_mean], '-r');
+plot([0,1.2], [zeta_29T1007_13p5nm_hor_mean+zeta_29T1007_13p5nm_hor_std,zeta_29T1007_13p5nm_hor_mean+zeta_29T1007_13p5nm_hor_std], ':r');
+plot([0,1.2], [zeta_29T1007_13p5nm_hor_mean-zeta_29T1007_13p5nm_hor_std,zeta_29T1007_13p5nm_hor_mean-zeta_29T1007_13p5nm_hor_std], ':r');
 hold off
-xlabel('separation / FWHM'), ylabel('global degree of coherence \zeta');
-legend('FWHM_x=1.00mm','FWHM_x=1.05mm','FWHM_x=2.00mm','FWHM_x=2.10mm');
-title('\lambda=13.5nm E=111uJ #Undulators=12');
-ylim([0 0.6]); xlim([0 1.2]);
+xlabel('separation / FWHM'), ylabel('normalized degree of transverse coherence \zeta_{x,y}');
+legend('FWHM_y=1.00mm','FWHM_x=1.05mm','FWHM_y=2.00mm','FWHM_x=2.10mm','Orientation','horizontal','Location','best');
+title(strcat('\lambda=13.5nm E=111uJ #Undulators=12 \zeta_{x}=(',num2str(round(zeta_29T1007_13p5nm_hor_mean*100,0)),'\pm',num2str(round(zeta_29T1007_13p5nm_hor_std*100,0)),')% ',' \zeta_{y}=(',num2str(round(zeta_29T1007_13p5nm_ver_mean*100,0)),'\pm',num2str(round(zeta_29T1007_13p5nm_ver_std*100,0)), ')% \zeta=(',num2str(round(zeta_29T1007_13p5nm_mean*100,0)),'\pm',num2str(round(zeta_29T1007_13p5nm_error*100,0)),')%'));
+ylim([0 0.8]); xlim([0 1.2]);
 
 
 %figure('rend', 'painters','pos', [1010 10 500 500]);
 subplot(3,3,9);
-plot(d_FWHM_26T2300_18nm_ver_S, zeta_26T2300_18nm_ver_S, '-xb');
+plot(d_FWHM_26T2300_18nm_ver_S, zeta_26T2300_18nm_ver_S, 'xb');
 hold on
-plot(d_FWHM_26T2300_18nm_hor_S, zeta_26T2300_18nm_hor_S, '-xr');
+plot(d_FWHM_26T2300_18nm_hor_S, zeta_26T2300_18nm_hor_S, 'xr');
 hold on
-plot(d_FWHM_26T2300_18nm_ver_L, zeta_26T2300_18nm_ver_L, '-ob');
+plot(d_FWHM_26T2300_18nm_ver_L, zeta_26T2300_18nm_ver_L, 'ob');
 hold on
-plot(d_FWHM_26T2300_18nm_hor_L, zeta_26T2300_18nm_hor_L, '-or');
+plot(d_FWHM_26T2300_18nm_hor_L, zeta_26T2300_18nm_hor_L, 'or');
+hold on
+plot([0,1.2], [zeta_26T2300_18nm_ver_mean,zeta_26T2300_18nm_ver_mean], '-b');
+plot([0,1.2], [zeta_26T2300_18nm_ver_mean+zeta_26T2300_18nm_ver_std,zeta_29T1007_13p5nm_ver_mean+zeta_29T1007_13p5nm_ver_std], ':b','HandleVisibility','off');
+plot([0,1.2], [zeta_26T2300_18nm_ver_mean-zeta_26T2300_18nm_ver_std,zeta_29T1007_13p5nm_ver_mean-zeta_29T1007_13p5nm_ver_std], ':b','HandleVisibility','off');
+hold on
+plot([0,1.2], [zeta_26T2300_18nm_hor_mean,zeta_26T2300_18nm_hor_mean], '-r');
+plot([0,1.2], [zeta_26T2300_18nm_hor_mean+zeta_26T2300_18nm_hor_std,zeta_26T2300_18nm_hor_mean+zeta_26T2300_18nm_hor_std], ':r','HandleVisibility','off');
+plot([0,1.2], [zeta_26T2300_18nm_hor_mean-zeta_26T2300_18nm_hor_std,zeta_26T2300_18nm_hor_mean-zeta_26T2300_18nm_hor_std], ':r','HandleVisibility','off');
 hold off
-xlabel('separation / FWHM'), ylabel('global degree of coherence \zeta');
-legend('FWHM_y=1.20mm','FWHM_x=1.20mm','FWHM_y=2.40mm','FWHM_x=2.40mm');
-title('\lambda=18.0nm E=48uJ #Undulators=7');
-ylim([0 0.6]); xlim([0 1.2]);
+xlabel('separation / FWHM'), ylabel('normalized degree of transverse coherence \zeta_{x,y}');
+legend('FWHM_y=1.20mm','FWHM_x=1.20mm','FWHM_y=2.40mm','FWHM_x=2.40mm','Orientation','horizontal','Location','best');
+title(strcat('\lambda=18.0nm E=48uJ #Undulators=7 \zeta_{x}=(',num2str(round(zeta_26T2300_18nm_hor_mean*100,0)),'\pm',num2str(round(zeta_26T2300_18nm_hor_std*100,0)),')% ',' \zeta_{y}=(',num2str(round(zeta_26T2300_18nm_ver_mean*100,0)),'\pm',num2str(round(zeta_26T2300_18nm_ver_std*100,0)), ')% \zeta=(',num2str(round(zeta_26T2300_18nm_mean*100,0)),'\pm',num2str(round(zeta_26T2300_18nm_error*100,0)),')%'));
+%set(h,'interpreter','tex')
+ylim([0 0.8]); xlim([0 1.2]);
 
 
 
 %% total degree of coherence \zeta is \zeta_vertical * \zeta_horizontal
+figure('rend', 'painters','pos', [10 10 1000 500]);
+
+%figure('rend', 'painters','pos', [510 10 500 500]);
+
+errorbar([8, 13.5, 18],[zeta_27T1529_8nm_mean,zeta_29T1007_13p5nm_mean,zeta_26T2300_18nm_mean],[zeta_27T1529_8nm_error,zeta_29T1007_13p5nm_error,zeta_26T2300_18nm_error]);
+ylim([0 0.8]);% xlim([0 1.2]);
+xlabel('wavelength / nm'), ylabel('\zeta');
+title('total normalized degree of transverse coherence \zeta = \zeta_{x} \cdot \zeta_{y}');
+
+
+
 %%
 findmax = false;  
 % look for the maximum Intensity in the image or use the
