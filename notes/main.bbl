@@ -1,0 +1,1511 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{BagschikFroemterMuellerEtAl2016a}{article}{}
+      \name{author}{15}{}{%
+        {{uniquename=0,uniquepart=base,hash=c47961cafb8838784fef4ef7f6643a91}{%
+           family={Bagschik},
+           familyi={B\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=992b01256817106b202d6c2a76a2e3bc}{%
+           family={Frömter},
+           familyi={F\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a31c834360ffc75163680ab42c9d2161}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d31063a9322f9b78e47d12f6c29bacdb}{%
+           family={Roseker},
+           familyi={R\bibinitperiod},
+           given={Wojciech},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b7b24a84d5c758caa6578536ac9e4224}{%
+           family={Bach},
+           familyi={B\bibinitperiod},
+           given={Judith},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4309315b9a76af0f963b920477e3391d}{%
+           family={Staeck},
+           familyi={S\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=218adac99a79b3dc74cff2507e15662a}{%
+           family={Thönni{ß}en},
+           familyi={T\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7d33d6873a0b9d4fda3eb83a8f48e8b2}{%
+           family={Schleitzer},
+           familyi={S\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f2e065195a60fe660b6569eb26b40e44}{%
+           family={Berntsen},
+           familyi={B\bibinitperiod},
+           given={Magnus\bibnamedelima H{å}rdensson},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1dbf5d880ace46680c786168cc51b397}{%
+           family={Weier},
+           familyi={W\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f3bc4dad82e83f3cdf09363fef951ec8}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9d6ca98907f6f1b722596a6477300021}{%
+           family={Viefhaus},
+           familyi={V\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5ee8b7d8c3d041f23ab6a3ac4be2e350}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Claus\bibnamedelima Michael},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f144fc4cc600cf128e003c2a82383c37}{%
+           family={Grübel},
+           familyi={G\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6c9909101df1df3b3f83dd184fe90cab}{%
+           family={Oepen},
+           familyi={O\bibinitperiod},
+           given={Hans\bibnamedelima Peter},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {OSA}%
+      }
+      \strng{namehash}{8c7a1e6cfbe37995775e23e305446ee0}
+      \strng{fullhash}{04ad85e9f3822ee241f3fd25cae5779a}
+      \strng{bibnamehash}{8c7a1e6cfbe37995775e23e305446ee0}
+      \strng{authorbibnamehash}{8c7a1e6cfbe37995775e23e305446ee0}
+      \strng{authornamehash}{8c7a1e6cfbe37995775e23e305446ee0}
+      \strng{authorfullhash}{04ad85e9f3822ee241f3fd25cae5779a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a method to determine the two-dimensional spatial coherence of synchrotron radiation in the soft X-ray regime by analyzing the Fourier transform of the magnetic speckle pattern from a ferromagnetic film in a multidomain state. To corroborate the results, a Young\&\#x2019;s double-pinhole experiment has been performed. The transverse coherence lengths in vertical and horizontal direction of both approaches are in a good agreement. The method presented here is simple and gives a direct access to the coherence properties of synchrotron radiation without nanostructured test objects.}
+      \field{journaltitle}{Optics Express}
+      \field{month}{10}
+      \field{number}{20}
+      \field{title}{Spatial coherence determination from the Fourier analysis of a resonant soft X-ray magnetic speckle pattern}
+      \field{volume}{24}
+      \field{year}{2016}
+      \field{pages}{23162\bibrangedash 23176}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1364/OE.24.023162
+      \endverb
+      \verb{file}
+      \verb :BagschikFroemterMuellerEtAl2016a.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://www.opticsexpress.org/abstract.cfm?URI=oe-24-20-23162
+      \endverb
+      \verb{url}
+      \verb http://www.opticsexpress.org/abstract.cfm?URI=oe-24-20-23162
+      \endverb
+      \keyw{Coherence; Speckle; Metals; Thin films; Scattering measurements; Synchrotron radiation; Coherence; Far field diffraction; Laser light; Physical vapor deposition; Ptychography; Speckle patterns}
+    \endentry
+    \entry{BartelsPaulGreenEtAl2002}{article}{}
+      \name{author}{10}{}{%
+        {{uniquename=0,uniquepart=base,hash=c076b1d1c1dc1243b497ff1f6c41947d}{%
+           family={Bartels},
+           familyi={B\bibinitperiod},
+           given={Randy\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0da5d51983642564ef9087dfe187b362}{%
+           family={Paul},
+           familyi={P\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=140838c4bb415ef90916d4de357425bb}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4b0e760296b3b6f2f2595b0310d2e512}{%
+           family={Kapteyn},
+           familyi={K\bibinitperiod},
+           given={Henry\bibnamedelima C.},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ee63471404c5c87ada9479b349a490cc}{%
+           family={Murnane},
+           familyi={M\bibinitperiod},
+           given={Margaret\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cd233d27c147b7c1915da7578b6821e0}{%
+           family={Backus},
+           familyi={B\bibinitperiod},
+           given={Sterling},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=00dd8fc0e23460fa876c2e21d4c0bdb0}{%
+           family={Christov},
+           familyi={C\bibinitperiod},
+           given={Ivan\bibnamedelima P.},
+           giveni={I\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=253bbb07805a3f779e86459701c968fe}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yanwei},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f09613646252c6e383e1f1ab440672e2}{%
+           family={Attwood},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6271e804493dcb330dfc4f210c544dcf}{%
+           family={Jacobsen},
+           familyi={J\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{ccd3863f6a7ed7f37c286607b6c8d0a9}
+      \strng{fullhash}{11b1fc4dff363456b9132814ce2e1b99}
+      \strng{bibnamehash}{ccd3863f6a7ed7f37c286607b6c8d0a9}
+      \strng{authorbibnamehash}{ccd3863f6a7ed7f37c286607b6c8d0a9}
+      \strng{authornamehash}{ccd3863f6a7ed7f37c286607b6c8d0a9}
+      \strng{authorfullhash}{11b1fc4dff363456b9132814ce2e1b99}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{5580}
+      \field{title}{Generation of spatially coherent light at extreme ultraviolet wavelengths}
+      \field{volume}{297}
+      \field{year}{2002}
+      \field{pages}{376\bibrangedash 378}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1126/science.1071718
+      \endverb
+      \verb{file}
+      \verb :BartelsPaulGreenEtAl2002 - Generation of spatially coherent light at extreme ultraviolet wavelengths.pdf:PDF
+      \endverb
+    \endentry
+    \entry{BurdetShimomuraHiroseEtAl2016}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=fc15cef84f38038a708986b8bb1474b5}{%
+           family={Burdet},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c11aafbe0e6f2ae78d1020cd90ba151c}{%
+           family={Shimomura},
+           familyi={S\bibinitperiod},
+           given={Kei},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bc4dcf5d3bf0c115c42d8f173965ecaf}{%
+           family={Hirose},
+           familyi={H\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dcdd6a773ca9d5bbe9d71d25ac6fcf39}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Akihiro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8e8fe1617e370180c5caff9e931610e1}{%
+           family={Takahashi},
+           familyi={T\bibinitperiod},
+           given={Yukio},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a80234ee29b50b18c169569e8a0db155}
+      \strng{fullhash}{94eed0cf2254c8add9f96cf497373688}
+      \strng{bibnamehash}{a80234ee29b50b18c169569e8a0db155}
+      \strng{authorbibnamehash}{a80234ee29b50b18c169569e8a0db155}
+      \strng{authornamehash}{a80234ee29b50b18c169569e8a0db155}
+      \strng{authorfullhash}{94eed0cf2254c8add9f96cf497373688}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Physics Letters}
+      \field{number}{7}
+      \field{title}{Efficient use of coherent X-rays in ptychography: Towards high-resolution and high-throughput observation of weak-phase objects}
+      \field{volume}{108}
+      \field{year}{2016}
+      \field{pages}{071103}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.4942105
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1063/1.4942105
+      \endverb
+      \verb{file}
+      \verb :BurdetShimomuraHiroseEtAl2016 - Efficient use coherent.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.4942105
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.4942105
+      \endverb
+    \endentry
+    \entry{ClarkHuangHarderEtAl2012}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=013a052a8b8fdf76a9786e80c2ce0761}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={JN},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bf1afb45a50313a87b61c9f7a08f8989}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={X},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bb97a112f61add4b5b941d11347f9a84}{%
+           family={Harder},
+           familyi={H\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=892104b4cadaea7613199fef90707a6c}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={IK},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{0d912d839c58dc58e8ad83cf1eca6e71}
+      \strng{fullhash}{92d327482731a2bf14be8dad63ab111a}
+      \strng{bibnamehash}{0d912d839c58dc58e8ad83cf1eca6e71}
+      \strng{authorbibnamehash}{0d912d839c58dc58e8ad83cf1eca6e71}
+      \strng{authornamehash}{0d912d839c58dc58e8ad83cf1eca6e71}
+      \strng{authorfullhash}{92d327482731a2bf14be8dad63ab111a}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature communications}
+      \field{title}{High-resolution three-dimensional partially coherent diffraction imaging}
+      \field{volume}{3}
+      \field{year}{2012}
+      \field{pages}{993}
+      \range{pages}{1}
+      \verb{file}
+      \verb :ClarkHuangHarderEtAl2012.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Goodman2015-StatisticalOptics2e}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3f04f310923440bfb7f300417d460b4f}{%
+           family={Goodman},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{3f04f310923440bfb7f300417d460b4f}
+      \strng{fullhash}{3f04f310923440bfb7f300417d460b4f}
+      \strng{bibnamehash}{3f04f310923440bfb7f300417d460b4f}
+      \strng{authorbibnamehash}{3f04f310923440bfb7f300417d460b4f}
+      \strng{authornamehash}{3f04f310923440bfb7f300417d460b4f}
+      \strng{authorfullhash}{3f04f310923440bfb7f300417d460b4f}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{isbn}{1119009456}
+      \field{month}{4}
+      \field{pagetotal}{540}
+      \field{title}{Statistical Optics 2e}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb :Goodman2015-StatisticalOptics2e.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ebook.de/de/product/22658187/goodman_statistical_optics_2e.html
+      \endverb
+      \verb{url}
+      \verb https://www.ebook.de/de/product/22658187/goodman_statistical_optics_2e.html
+      \endverb
+    \endentry
+    \entry{GorobtsovMercurioBrennerEtAl2017}{article}{}
+      \name{author}{15}{}{%
+        {{uniquename=0,uniquepart=base,hash=ab5a345b9361ca8dbeb54e133ab35736}{%
+           family={Gorobtsov},
+           familyi={G\bibinitperiod},
+           given={O.\bibnamedelimi Yu.},
+           giveni={O\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3fe650e7a0c69bd864d8cbcf227313cd}{%
+           family={Mercurio},
+           familyi={M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7e2704cec64135146668b18f7ee86ac8}{%
+           family={Brenner},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e5424ef2fc2e44b6ab9470271ee0a5e6}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={U.},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5a2859322991ba834bfdca9826a099cd}{%
+           family={Gerasimova},
+           familyi={G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=82eb013a4b43f80f53f70dd733d27963}{%
+           family={Kurta},
+           familyi={K\bibinitperiod},
+           given={R.\bibnamedelimi P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1f1c4f98f60d9a27aa91737a5a333791}{%
+           family={Hieke},
+           familyi={H\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=28bfe49c488f1f8666c85631e243154a}{%
+           family={Skopintsev},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f79b3cb3e1325368aa05007f9556cb72}{%
+           family={Zaluzhnyy},
+           familyi={Z\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=637d220cef031f492af42bdadbbce1d3}{%
+           family={Lazarev},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e27d3201c7ce1b0a86252a50c4b5c040}{%
+           family={Dzhigaev},
+           familyi={D\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=caadcd22dff831d965b49be4bbf93133}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5d4e0d8655dba6a0d61260c97248cd5d}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a0ae46f55ca478b06cadf56d5644c9e9}{%
+           family={Wurth},
+           familyi={W\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6cbae162c43a6f89a75ec5ed2890da8c}{%
+           family={Vartanyants},
+           familyi={V\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society ({APS})}%
+      }
+      \strng{namehash}{9fbf6887a67c810cf1d956e4f16f29b7}
+      \strng{fullhash}{3aa645032320354ccace40073b5107f5}
+      \strng{bibnamehash}{9fbf6887a67c810cf1d956e4f16f29b7}
+      \strng{authorbibnamehash}{9fbf6887a67c810cf1d956e4f16f29b7}
+      \strng{authornamehash}{9fbf6887a67c810cf1d956e4f16f29b7}
+      \strng{authorfullhash}{3aa645032320354ccace40073b5107f5}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Statistical properties of a free-electron laser revealed by Hanbury Brown{–}Twiss interferometry}
+      \field{volume}{95}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1103/physreva.95.023843
+      \endverb
+      \verb{file}
+      \verb :GorobtsovMercurioBrennerEtAl2017.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Huang:2013nka}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1a460ef65a8824a2bfa44b124f88b001}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhirong},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1a460ef65a8824a2bfa44b124f88b001}
+      \strng{fullhash}{1a460ef65a8824a2bfa44b124f88b001}
+      \strng{bibnamehash}{1a460ef65a8824a2bfa44b124f88b001}
+      \strng{authorbibnamehash}{1a460ef65a8824a2bfa44b124f88b001}
+      \strng{authornamehash}{1a460ef65a8824a2bfa44b124f88b001}
+      \strng{authorfullhash}{1a460ef65a8824a2bfa44b124f88b001}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Proceedings, 4th International Particle Accelerator Conference (IPAC 2013): Shanghai, China, May 12-17, 2013}}
+      \field{title}{{Brightness and Coherence of Synchrotron Radiation and FELs}}
+      \field{year}{2013}
+      \field{pages}{MOYCB101}
+      \range{pages}{-1}
+      \verb{file}
+      \verb :slac-pub-15449.pdf:PDF;:moycb101_talk.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://JACoW.org/IPAC2013/papers/moycb101.pdf
+      \endverb
+      \verb{url}
+      \verb http://JACoW.org/IPAC2013/papers/moycb101.pdf
+      \endverb
+    \endentry
+    \entry{Jaegle2005-CoherentSourcesXUV}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a64a6e37f6de4a8e9a53b90141a7a6bf}{%
+           family={Jaeglé},
+           familyi={J\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a64a6e37f6de4a8e9a53b90141a7a6bf}
+      \strng{fullhash}{a64a6e37f6de4a8e9a53b90141a7a6bf}
+      \strng{bibnamehash}{a64a6e37f6de4a8e9a53b90141a7a6bf}
+      \strng{authorbibnamehash}{a64a6e37f6de4a8e9a53b90141a7a6bf}
+      \strng{authornamehash}{a64a6e37f6de4a8e9a53b90141a7a6bf}
+      \strng{authorfullhash}{a64a6e37f6de4a8e9a53b90141a7a6bf}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{9780387230078}
+      \field{series}{Springer Series in Optical Sciences volume 106}
+      \field{title}{Coherent Sources of XUV Radiation: Soft X-Ray Lasers and High-Order Harmonic Generation (Springer Series in Optical Sciences)}
+      \field{year}{2005}
+      \verb{file}
+      \verb :Coherent-Sources-of-XUV-Radiation-Soft-X-Ray-Lasers-and-High-Order-Harmonic-Generation-Springer-Series-in-Optical-Sciences-.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://gen.lib.rus.ec/book/index.php?md5=8C396BA7F804EBB2B7B5B8322661CF5D
+      \endverb
+      \verb{url}
+      \verb http://gen.lib.rus.ec/book/index.php?md5=8C396BA7F804EBB2B7B5B8322661CF5D
+      \endverb
+    \endentry
+    \entry{LinPatersonPeeleEtAl2003}{article}{}
+      \name{author}{11}{}{%
+        {{uniquename=0,uniquepart=base,hash=ffbaea6bd2e0a526e4f2a259971cf878}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cd9fa8e7b31864976072af21fc1f22d9}{%
+           family={Paterson},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=dbeac73fb92eb0f97fe395570441e3e4}{%
+           family={Peele},
+           familyi={P\bibinitperiod},
+           given={A.\bibnamedelimi G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=91f48c81d3454a44c07c81a66afc01fb}{%
+           family={McMahon},
+           familyi={M\bibinitperiod},
+           given={P.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e15f3cfc3a66f5f96e5a2dfb9d5d02b1}{%
+           family={Chantler},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d0653a96f117896a9fa7d06031eeb32a}{%
+           family={Nugent},
+           familyi={N\bibinitperiod},
+           given={K.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=936f2355eb5ee4d0c8cb288c26764de7}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fc6e6e9646014e9e4968fccf719a7adb}{%
+           family={Moldovan},
+           familyi={M\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c2ea79a99236d8aa74b580c91ba24667}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4196591025dfa92bf464e8789a1e0e52}{%
+           family={Mancini},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=79f9b2131b863542b5fd2179f84ec0d4}{%
+           family={McNulty},
+           familyi={M\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society ({APS})}%
+      }
+      \strng{namehash}{865131bf7e5a079220ba4525e9e0e966}
+      \strng{fullhash}{db0447bd376672a49ea255a5b50a1efa}
+      \strng{bibnamehash}{865131bf7e5a079220ba4525e9e0e966}
+      \strng{authorbibnamehash}{865131bf7e5a079220ba4525e9e0e966}
+      \strng{authornamehash}{865131bf7e5a079220ba4525e9e0e966}
+      \strng{authorfullhash}{db0447bd376672a49ea255a5b50a1efa}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{2}
+      \field{number}{7}
+      \field{title}{Measurement of the Spatial Coherence Function of Undulator Radiation using a Phase Mask}
+      \field{volume}{90}
+      \field{year}{2003}
+      \verb{doi}
+      \verb 10.1103/physrevlett.90.074801
+      \endverb
+      \verb{file}
+      \verb :LinPatersonPeeleEtAl2003.pdf:PDF
+      \endverb
+    \endentry
+    \entry{MandelWolf1995-Opticalcoherencequantum}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=dc6966f2c95f08c3017246a5e4de7957}{%
+           family={Mandel},
+           familyi={M\bibinitperiod},
+           given={Leonard},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=2,uniquepart=given,hash=4f3da79454ab0edb86f37a6038d1998f}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{fullhash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{bibnamehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{authorbibnamehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{authornamehash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \strng{authorfullhash}{8de37a2b95c6de5877b00fe3ea99a1cf}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Optical coherence and quantum optics}
+      \field{year}{1995}
+      \verb{file}
+      \verb :MandelWolf1995 - Optical coherence and quantum optics.djvu:Djvu;:MandelWolf1995 - Optical coherence and quantum optics.pdf:PDF;:MandelWolf1995 - Optical coherence and quantum optics-tw.pdf:PDF
+      \endverb
+    \endentry
+    \entry{McNeilThompson2010}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=0e88b24038dcd2a3391833f23ba371bf}{%
+           family={McNeil},
+           familyi={M\bibinitperiod},
+           given={Brian\bibnamedelimb W.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d80b20adf96204e1af4e29402eb8fb48}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Neil\bibnamedelima R.},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.}%
+      }
+      \strng{namehash}{3591876a81f8f8f9ddf6f7ca62fb4999}
+      \strng{fullhash}{3591876a81f8f8f9ddf6f7ca62fb4999}
+      \strng{bibnamehash}{3591876a81f8f8f9ddf6f7ca62fb4999}
+      \strng{authorbibnamehash}{3591876a81f8f8f9ddf6f7ca62fb4999}
+      \strng{authornamehash}{3591876a81f8f8f9ddf6f7ca62fb4999}
+      \strng{authorfullhash}{3591876a81f8f8f9ddf6f7ca62fb4999}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Photonics}
+      \field{month}{11}
+      \field{title}{X-ray free-electron lasers}
+      \field{volume}{4}
+      \field{year}{2010}
+      \field{pages}{814}
+      \range{pages}{1}
+      \verb{file}
+      \verb :McNeilThompson2010 - X ray free.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/nphoton.2010.239
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/nphoton.2010.239
+      \endverb
+    \endentry
+    \entry{Nugent1991}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d0653a96f117896a9fa7d06031eeb32a}{%
+           family={Nugent},
+           familyi={N\bibinitperiod},
+           given={K.\bibnamedelimi A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Optical Society}%
+      }
+      \strng{namehash}{d0653a96f117896a9fa7d06031eeb32a}
+      \strng{fullhash}{d0653a96f117896a9fa7d06031eeb32a}
+      \strng{bibnamehash}{d0653a96f117896a9fa7d06031eeb32a}
+      \strng{authorbibnamehash}{d0653a96f117896a9fa7d06031eeb32a}
+      \strng{authornamehash}{d0653a96f117896a9fa7d06031eeb32a}
+      \strng{authorfullhash}{d0653a96f117896a9fa7d06031eeb32a}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Optical Society of America A}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Partially coherent diffraction patterns and coherence measurement}
+      \field{volume}{8}
+      \field{year}{1991}
+      \field{pages}{1574}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/josaa.8.001574
+      \endverb
+      \verb{file}
+      \verb :Nugent1991.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Paganin2006}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=de00079ce972cae3d45dcb8467ad735a}{%
+           family={Paganin},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {OUP Oxford}%
+      }
+      \strng{namehash}{de00079ce972cae3d45dcb8467ad735a}
+      \strng{fullhash}{de00079ce972cae3d45dcb8467ad735a}
+      \strng{bibnamehash}{de00079ce972cae3d45dcb8467ad735a}
+      \strng{authorbibnamehash}{de00079ce972cae3d45dcb8467ad735a}
+      \strng{authornamehash}{de00079ce972cae3d45dcb8467ad735a}
+      \strng{authorfullhash}{de00079ce972cae3d45dcb8467ad735a}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780198567288}
+      \field{series}{Oxford Series on Synchrotron Radiation}
+      \field{title}{Coherent X-Ray Optics}
+      \field{year}{2006}
+      \verb{file}
+      \verb :Paganin2006 - Coherent X-Ray Optics.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://books.google.pt/books?id=Pq44Hc\_rJWYC
+      \endverb
+      \verb{url}
+      \verb https://books.google.pt/books?id=Pq44Hc%5C_rJWYC
+      \endverb
+    \endentry
+    \entry{SaldinSchneidmillerYurkov2010}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=1,uniquepart=given,hash=eccd034f7865ce58c4b2e0afbf4f0fce}{%
+           family={Saldin},
+           familyi={S\bibinitperiod},
+           given={E.\bibnamedelimi L.},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=1,uniquepart=given,hash=08a3a79c1262466b4376d9f1fb70a685}{%
+           family={Schneidmiller},
+           familyi={S\bibinitperiod},
+           given={E.\bibnamedelimi A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=1,uniquepart=given,hash=4c8b3b48c661b6063b85a60975981f16}{%
+           family={Yurkov},
+           familyi={Y\bibinitperiod},
+           given={M.\bibnamedelimi V.},
+           giveni={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{fullhash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{bibnamehash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{authorbibnamehash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{authornamehash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{authorfullhash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe the statistical and coherence properties of radiation from x-ray free-electron lasers (XFEL). It is shown that the XFEL radiation before saturation is described with Gaussian statistics. Particularly important is the case of the optimized XFEL studied in detail. Applying similarity techniques to the results of numerical simulations allowed us to find universal scaling relations for the main characteristics of an XFEL operating in the saturation regime: efficiency, coherence time and degree of transverse coherence. We find that with an appropriate normalization of these quantities, they are functions of only the ratio of the geometrical emittance of the electron beam to the radiation wavelength. Statistical and coherence properties of the higher harmonics of the radiation are highlighted as well.}
+      \field{journaltitle}{New Journal of Physics}
+      \field{number}{3}
+      \field{title}{Statistical and coherence properties of radiation from x-ray free-electron lasers}
+      \field{volume}{12}
+      \field{year}{2010}
+      \field{pages}{035010}
+      \range{pages}{1}
+      \verb{file}
+      \verb :SaldinSchneidmillerYurkov2010 - Statistical coherence properties.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://stacks.iop.org/1367-2630/12/i=3/a=035010
+      \endverb
+      \verb{url}
+      \verb http://stacks.iop.org/1367-2630/12/i=3/a=035010
+      \endverb
+    \endentry
+    \entry{SaldinSchneidmillerYurkov2008}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=1,uniquepart=given,hash=eccd034f7865ce58c4b2e0afbf4f0fce}{%
+           family={Saldin},
+           familyi={S\bibinitperiod},
+           given={E.L.},
+           giveni={E\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=1,uniquepart=given,hash=08a3a79c1262466b4376d9f1fb70a685}{%
+           family={Schneidmiller},
+           familyi={S\bibinitperiod},
+           given={E.A.},
+           giveni={E\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=1,uniquepart=given,hash=4c8b3b48c661b6063b85a60975981f16}{%
+           family={Yurkov},
+           familyi={Y\bibinitperiod},
+           given={M.V.},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{fullhash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{bibnamehash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{authorbibnamehash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{authornamehash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \strng{authorfullhash}{1068f84e6c491d1fb861ec77e7d9c970}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Optics Communications}
+      \field{month}{3}
+      \field{number}{5}
+      \field{title}{Coherence properties of the radiation from X-ray free electron laser}
+      \field{volume}{281}
+      \field{year}{2008}
+      \field{pages}{1179\bibrangedash 1188}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.optcom.2007.10.044
+      \endverb
+      \verb{file}
+      \verb :SaldinSchneidmillerYurkov2008.pdf:PDF
+      \endverb
+    \endentry
+    \entry{SingerSorgenfreiMancusoEtAl2012}{article}{}
+      \name{author}{19}{}{%
+        {{uniquename=2,uniquepart=given,hash=5d4e0d8655dba6a0d61260c97248cd5d}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=4ba19e1e26a398ae43567f340f3b4cca}{%
+           family={Sorgenfrei},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cf94a352acc049bb3d0ca80da4bd12da}{%
+           family={Mancuso},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5a2859322991ba834bfdca9826a099cd}{%
+           family={Gerasimova},
+           familyi={G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f7bf494ecd1c2efc2e5dca727573f6e4}{%
+           family={Yefanov},
+           familyi={Y\bibinitperiod},
+           given={O.\bibnamedelimi M.},
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8f66538f5accde0d6b7e3670110894b3}{%
+           family={Gulden},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bc8380cf4ed483d0db1614f03028782c}{%
+           family={Gorniak},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=71b1e8a038cedb8a99326c67fa45e227}{%
+           family={Senkbeil},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=de36def225798355d4b551c408def684}{%
+           family={Sakdinawat},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ce084360cc68e7db4fe6cae1287b3adf}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=df0f2aace249b549e0649019fe2698c9}{%
+           family={Attwood},
+           familyi={A\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=576be732fcd9b767700f5c8daf5d9f49}{%
+           family={Dziarzhytski},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=054f2235530c80efd53232d153a1b8bb}{%
+           family={Mai},
+           familyi={M\bibinitperiod},
+           given={D.\bibnamedelimi D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=20343a8cab938ba8133e28c8b038416c}{%
+           family={Treusch},
+           familyi={T\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4c078d29601e30c9b4d6d516d571b22b}{%
+           family={Weckert},
+           familyi={W\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8dda6cd865ff9ea180326ff744fb2c45}{%
+           family={Salditt},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c96be2337851b8600284f336533d2b4d}{%
+           family={Rosenhahn},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a0ae46f55ca478b06cadf56d5644c9e9}{%
+           family={Wurth},
+           familyi={W\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6cbae162c43a6f89a75ec5ed2890da8c}{%
+           family={Vartanyants},
+           familyi={V\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {OSA}%
+      }
+      \strng{namehash}{b356cd23357ac6e6170e60ac25ab15c7}
+      \strng{fullhash}{ed451a577c94d494c27d855bc8b3c7c7}
+      \strng{bibnamehash}{b356cd23357ac6e6170e60ac25ab15c7}
+      \strng{authorbibnamehash}{b356cd23357ac6e6170e60ac25ab15c7}
+      \strng{authornamehash}{b356cd23357ac6e6170e60ac25ab15c7}
+      \strng{authorfullhash}{ed451a577c94d494c27d855bc8b3c7c7}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The experimental characterization of the spatial and temporal coherence properties of the free-electron laser in Hamburg (FLASH) at a wavelength of 8.0 nm is presented. Double pinhole diffraction patterns of single femtosecond pulses focused to a size of about 10{\texttimes}10 $\mu$m2 were measured. A transverse coherence length of 6.2 {\textpm} 0.9 $\mu$m in the horizontal and 8.7 {\textpm} 1.0 $\mu$m in the vertical direction was determined from the most coherent pulses. Using a split and delay unit the coherence time of the pulses produced in the same operation conditions of FLASH was measured to be 1.75 {\textpm} 0.01 fs. From our experiment we estimated the degeneracy parameter of the FLASH beam to be on the order of 1010 to 1011, which exceeds the values of this parameter at any other source in the same energy range by many orders of magnitude.}
+      \field{journaltitle}{Optics Express}
+      \field{month}{7}
+      \field{number}{16}
+      \field{title}{Spatial and temporal coherence properties of single free-electron laser pulses}
+      \field{volume}{20}
+      \field{year}{2012}
+      \field{pages}{17480\bibrangedash 17495}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1364/OE.20.017480
+      \endverb
+      \verb{file}
+      \verb :SingerSorgenfreiMancusoEtAl2012.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb http://www.opticsexpress.org/abstract.cfm?URI=oe-20-16-17480
+      \endverb
+      \verb{url}
+      \verb http://www.opticsexpress.org/abstract.cfm?URI=oe-20-16-17480
+      \endverb
+      \keyw{Coherence and statistical optics; Free-electron lasers (FELs); Beam delivery; Fourier transforms; Ptychography; Spontaneous emission; Transverse effects; Visible lasers}
+    \endentry
+    \entry{Svelto2010}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c9e41b8ae7edc48c3a09e4f7c8582f5e}{%
+           family={Svelto},
+           familyi={S\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{c9e41b8ae7edc48c3a09e4f7c8582f5e}
+      \strng{fullhash}{c9e41b8ae7edc48c3a09e4f7c8582f5e}
+      \strng{bibnamehash}{c9e41b8ae7edc48c3a09e4f7c8582f5e}
+      \strng{authorbibnamehash}{c9e41b8ae7edc48c3a09e4f7c8582f5e}
+      \strng{authornamehash}{c9e41b8ae7edc48c3a09e4f7c8582f5e}
+      \strng{authorfullhash}{c9e41b8ae7edc48c3a09e4f7c8582f5e}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781441913029}
+      \field{title}{Principles of Lasers}
+      \field{year}{2010}
+      \verb{file}
+      \verb :Svelto2010 - Principles Lasers.pdf:PDF
+      \endverb
+      \verb{urlraw}
+      \verb https://books.google.pt/books?id=ioywRI5W2HEC
+      \endverb
+      \verb{url}
+      \verb https://books.google.pt/books?id=ioywRI5W2HEC
+      \endverb
+    \endentry
+    \entry{VartanyantsRobinson2001}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=2,uniquepart=given,hash=6cbae162c43a6f89a75ec5ed2890da8c}{%
+           family={Vartanyants},
+           familyi={V\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=892104b4cadaea7613199fef90707a6c}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={I.\bibnamedelimi K.},
+           giveni={I\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{b0b3b2f5a328f9beb44914567534236c}
+      \strng{fullhash}{b0b3b2f5a328f9beb44914567534236c}
+      \strng{bibnamehash}{b0b3b2f5a328f9beb44914567534236c}
+      \strng{authorbibnamehash}{b0b3b2f5a328f9beb44914567534236c}
+      \strng{authornamehash}{b0b3b2f5a328f9beb44914567534236c}
+      \strng{authorfullhash}{b0b3b2f5a328f9beb44914567534236c}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Physics: Condensed Matter}
+      \field{number}{47}
+      \field{title}{Partial coherence effects on the imaging of small crystals using coherent x-ray diffraction}
+      \field{volume}{13}
+      \field{year}{2001}
+      \field{pages}{10593}
+      \range{pages}{1}
+      \verb{file}
+      \verb :VartanyantsRobinson2001 - Partial coherence effects on the imaging of small crystals using coherent x-ray diffraction.pdf:PDF
+      \endverb
+    \endentry
+    \entry{VartanyantsSinger2010}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=2,uniquepart=given,hash=6cbae162c43a6f89a75ec5ed2890da8c}{%
+           family={Vartanyants},
+           familyi={V\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=2,uniquepart=given,hash=5d4e0d8655dba6a0d61260c97248cd5d}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{235e7cf12920a68fd3d53c4d2319d04d}
+      \strng{fullhash}{235e7cf12920a68fd3d53c4d2319d04d}
+      \strng{bibnamehash}{235e7cf12920a68fd3d53c4d2319d04d}
+      \strng{authorbibnamehash}{235e7cf12920a68fd3d53c4d2319d04d}
+      \strng{authornamehash}{235e7cf12920a68fd3d53c4d2319d04d}
+      \strng{authorfullhash}{235e7cf12920a68fd3d53c4d2319d04d}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New Journal of Physics}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Coherence properties of hard x-ray synchrotron sources and x-ray free-electron lasers}
+      \field{volume}{12}
+      \field{year}{2010}
+      \field{pages}{035004}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1367-2630/12/3/035004
+      \endverb
+      \verb{file}
+      \verb :Vartanyants_2010_New_J._Phys._12_035004.pdf:PDF
+      \endverb
+    \endentry
+    \entry{VartanyantsSingerMancusoEtAl2011}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{uniquename=2,uniquepart=given,hash=aa35e71651c9bc0421839c043e5e21a7}{%
+           family={Vartanyants},
+           familyi={V\bibinitperiod},
+           given={Ivan\bibnamedelima A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=2,uniquepart=given,hash=c38b2ec9fd23f2d60c427b82665fd560}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod},
+           givenun=2}}%
+        {{uniquename=0,uniquepart=base,hash=5bc073642d6929fc652b6694cf2373a3}{%
+           family={Mancuso},
+           familyi={M\bibinitperiod},
+           given={Adrian\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1a9327396f23c8628d1e1eb182a3d3e4}{%
+           family={Yefanov},
+           familyi={Y\bibinitperiod},
+           given={Oleksandr\bibnamedelima M.},
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=de36def225798355d4b551c408def684}{%
+           family={Sakdinawat},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=253bbb07805a3f779e86459701c968fe}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yanwei},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=78e4f7fef7969efd8ede4abc27c762b8}{%
+           family={Bang},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a230fc957a679b5a3067b9e1ca8ab0f2}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Garth\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=99fc9af76479f989efea2acdd91ca9a7}{%
+           family={Cadenazzi},
+           familyi={C\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=60f27a1518f6af372597a7606d67e145}{%
+           family={Abbey},
+           familyi={A\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{646302bd5cb348f34107ba9a1ecf8773}
+      \strng{fullhash}{dcbd59110bac084fc59fe6f2af846cc4}
+      \strng{bibnamehash}{646302bd5cb348f34107ba9a1ecf8773}
+      \strng{authorbibnamehash}{646302bd5cb348f34107ba9a1ecf8773}
+      \strng{authornamehash}{646302bd5cb348f34107ba9a1ecf8773}
+      \strng{authorfullhash}{dcbd59110bac084fc59fe6f2af846cc4}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{14}
+      \field{title}{Coherence properties of individual femtosecond pulses of an x-ray free-electron laser}
+      \field{volume}{107}
+      \field{year}{2011}
+      \field{pages}{144801}
+      \range{pages}{1}
+      \verb{file}
+      \verb :VartanyantsSingerMancusoEtAl2011 - Coherence properties of individual femtosecond pulses of an x-ray free-electron laser.pdf:PDF
+      \endverb
+    \endentry
+    \entry{WhiteheadWilliamsQuineyEtAl2009}{article}{}
+      \name{author}{10}{}{%
+        {{uniquename=0,uniquepart=base,hash=34c1bbcd562be031d5160823faf9242f}{%
+           family={Whitehead},
+           familyi={W\bibinitperiod},
+           given={LW},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a3ad7153aa4b7dc05311c5da899fa260}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={GJ},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=2467bf40bddd18c1064cb60acfad6f61}{%
+           family={Quiney},
+           familyi={Q\bibinitperiod},
+           given={HM},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=35a41a7e9a928833ede8d9fdab44073a}{%
+           family={Vine},
+           familyi={V\bibinitperiod},
+           given={DJ},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ba4026efb406e7f50bc26a25e931d3d8}{%
+           family={Dilanian},
+           familyi={D\bibinitperiod},
+           given={RA},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7caf183e485cf629da38eeff9265c396}{%
+           family={Flewett},
+           familyi={F\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d0653a96f117896a9fa7d06031eeb32a}{%
+           family={Nugent},
+           familyi={N\bibinitperiod},
+           given={KA},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b69df8c652eaf0a8ac703725c35a7429}{%
+           family={Peele},
+           familyi={P\bibinitperiod},
+           given={Andrew\bibnamedelima Gareth},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=35b9390beae853ee5c4a2ef021835c0c}{%
+           family={Balaur},
+           familyi={B\bibinitperiod},
+           given={Eugeniu},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=79f9b2131b863542b5fd2179f84ec0d4}{%
+           family={McNulty},
+           familyi={M\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{4cf1215bbea6bc67d413383708119fd7}
+      \strng{fullhash}{cdf8c168c4ac35073ab044893b257e6e}
+      \strng{bibnamehash}{4cf1215bbea6bc67d413383708119fd7}
+      \strng{authorbibnamehash}{4cf1215bbea6bc67d413383708119fd7}
+      \strng{authornamehash}{4cf1215bbea6bc67d413383708119fd7}
+      \strng{authorfullhash}{cdf8c168c4ac35073ab044893b257e6e}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical review letters}
+      \field{number}{24}
+      \field{title}{Diffractive imaging using partially coherent x rays}
+      \field{volume}{103}
+      \field{year}{2009}
+      \field{pages}{243902}
+      \range{pages}{1}
+      \verb{file}
+      \verb :WhiteheadWilliamsQuineyEtAl2009 - Diffractive imaging using partially coherent x rays.pdf:PDF
+      \endverb
+    \endentry
+    \entry{WilliamsQuineyPeeleEtAl2007}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=a230fc957a679b5a3067b9e1ca8ab0f2}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Garth\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=556a6ab424c970471d27a88b81b33786}{%
+           family={Quiney},
+           familyi={Q\bibinitperiod},
+           given={Harry\bibnamedelima M.},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6704e898703e9235ddfbe172e1521c07}{%
+           family={Peele},
+           familyi={P\bibinitperiod},
+           given={Andrew\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=937ec56c5e0416311b12a003f91962f2}{%
+           family={Nugent},
+           familyi={N\bibinitperiod},
+           given={Keith\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{1b9c9dba7e56eef13d922873b4216df5}
+      \strng{fullhash}{60f370a720e61091b7a0720f3a5e9132}
+      \strng{bibnamehash}{1b9c9dba7e56eef13d922873b4216df5}
+      \strng{authorbibnamehash}{1b9c9dba7e56eef13d922873b4216df5}
+      \strng{authornamehash}{1b9c9dba7e56eef13d922873b4216df5}
+      \strng{authorfullhash}{60f370a720e61091b7a0720f3a5e9132}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{10}
+      \field{title}{Coherent diffractive imaging and partial coherence}
+      \field{volume}{75}
+      \field{year}{2007}
+      \field{pages}{104102}
+      \range{pages}{1}
+      \verb{file}
+      \verb :WilliamsQuineyPeeleEtAl2007 - Coherent diffractive imaging and partial coherence.pdf:PDF
+      \endverb
+    \endentry
+    \entry{Wolf1955}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=2,uniquepart=given,hash=961da00c0de46b3e7dcc94eacd84a7e4}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society}%
+      }
+      \strng{namehash}{961da00c0de46b3e7dcc94eacd84a7e4}
+      \strng{fullhash}{961da00c0de46b3e7dcc94eacd84a7e4}
+      \strng{bibnamehash}{961da00c0de46b3e7dcc94eacd84a7e4}
+      \strng{authorbibnamehash}{961da00c0de46b3e7dcc94eacd84a7e4}
+      \strng{authornamehash}{961da00c0de46b3e7dcc94eacd84a7e4}
+      \strng{authorfullhash}{961da00c0de46b3e7dcc94eacd84a7e4}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{month}{6}
+      \field{number}{1181}
+      \field{title}{A Macroscopic Theory of Interference and Diffraction of Light from Finite Sources. {II}. Fields with a Spectral Range of Arbitrary Width}
+      \field{volume}{230}
+      \field{year}{1955}
+      \field{pages}{246\bibrangedash 265}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1098/rspa.1955.0127
+      \endverb
+      \verb{file}
+      \verb :Wolf1955.pdf:PDF
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
