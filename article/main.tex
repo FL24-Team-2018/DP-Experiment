@@ -20,6 +20,16 @@
 \articletype{Research Article}
 % Note that article type is not required for Express journals (OE, BOE, OME and OSAC)
 
+
+\usepackage{graphicx}
+\usepackage{relsize}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{bm,nicefrac,xfrac}
+\usepackage{amsmath}
+\newcommand{\mathup}[1]{\text{\textup{#1}}}
+
+
 \begin{document}
 
 \title{Coherence measurements with double pinholes at FLASH2}
@@ -44,6 +54,20 @@ Since 2016 FLASH at DESY in Hamburg operates the variable-gap undulator beamline
 %%%%%%%%%%%%%%%%%%%%%%%%%%  body  %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
+\subsection{Blind-deconvolution to recover the partially coherent intensity}
+
+The measured intensity can be expressed as a convolution (see \cite[(eq.33)]{VartanyantsRobinson2001} \cite[(eq.23)]{WilliamsQuineyPeeleEtAl2007} (citing \cite{LinPatersonPeeleEtAl2003} (citing \cite{Nugent1991})), \cite[(eq.1)]{WhiteheadWilliamsQuineyEtAl2009} and \cite[(eq.5)]{ClarkHuangHarderEtAl2012}):
+
+\[I_{\mathup{pc}} = I_\mathup{c} \ast \mathcal{F}(\gamma)\]
+
+where $I_{\mathup{pc}}$ and $I_c$ are the partially coherent intensity and the coherent intensity, respectively, and $\mathcal{F}$ represents the Fourier transformation. $\gamma$ is termed as the normalized spatial coherence function, transverse ($r$) to the direction of the wave field propagation.
+
+The transverse coherence length $\xi_\mathup{T}$ can be measured as the FWHM of the $\mathcal{F}(\gamma)$ at the detector plane. (reference?) 
+
+\[\gamma \propto \exp\!\left[-\frac{r}{2\sigma}\right]\]
+
+
+\[\left( I_{\mathup{pc}},\mathcal{F}(\gamma)_{\mathup{est}}\right)  \longrightarrow \left( I_\mathup{c}, \mathcal{F}(\gamma)_{\mathup{rec}} \right)  \]
 
 
 %%%%%%%%%%%%%%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%%%
