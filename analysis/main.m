@@ -73,19 +73,21 @@ run_sigma_scan = true;
 % vertically: FWHM approx 3mm
 sigma_B_um_26T2300_18nm_ver_L = 704.25; % before measurements
 %sigma_B_um_26T2300_18nm_ver_L = 644.75; % after measurements
+sigma_B = sigma_B_um_26T2300_18nm_ver_L;
 FWHM_um_26T2300_18nm_ver_L = 0.5887*4*sigma_B_um_26T2300_18nm_ver_L;
 %sigma_B = 0.64445;  % after measurements
 %wavelength_nm = 18.0; pixis_centerx_px = 444; pixis_centery_px = 552; Sigma_um = 39; Sigma_um_min=35; Sigma_um_max=42; d_um = 107; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0107um (2a) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_2a_d_107.0_E_048.17_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 424; pixis_centery_px = 499; Sigma_um = 25; Sigma_um_min=10; Sigma_um_max=35; d_um = 215; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0215um (3a) ap5=7.0 ap7=50.0 (bg3a#1) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_3a_d_215.0_E_047.84_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 398; pixis_centery_px = 496; Sigma_um = 22; Sigma_um_min=18; Sigma_um_max=35; d_um = 322; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0322um (4a) ap5=7.0 ap7=50.0 (bg4cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_4a_d_322.0_E_047.82_average.mat'));
-wavelength_nm = 18.0; pixis_centerx_px = 448; pixis_centery_px = 489; Sigma_um = 27; Sigma_um_min=18; Sigma_um_max=35; d_um = 707; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0707um (1b) ap5=7.0 ap7=50.0 (bg1ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_1b_d_707.0_E_047.97_average.mat'));
+%wavelength_nm = 18.0; pixis_centerx_px = 448; pixis_centery_px = 489; Sigma_um = 27; Sigma_um_min=1; Sigma_um_max=35; d_um = 707; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0707um (1b) ap5=7.0 ap7=50.0 (bg1ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_1b_d_707.0_E_047.97_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 425; pixis_centery_px = 556; Sigma_um = 22; Sigma_um_min=18; Sigma_um_max=35; d_um = 890; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0890um (2b) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_2b_d_890.0_E_048.17_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 355; pixis_centery_px = 500; Sigma_um = 23; Sigma_um_min=20; Sigma_um_max=35; d_um = 1047; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 1047um (3b) ap5=7.0 ap7=50.0 (bg3ab#2) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_3b_d_1047.0_E_047.92_average.mat'));
 %wavelength_nm = 18.0; pixis_centerx_px = 493; pixis_centery_px = 500; Sigma_um = 21; Sigma_um_min=20; Sigma_um_max=35; d_um = 1335; load(strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 1335um (4b) ap5=7.0 ap7=50.0 (bg4cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_4b_d_1335.0_E_047.91_average.mat'));
 d_um_26T2300_18nm_ver_L = [ 107, 215, 322, 707, 890, 1047, 1335 ];
 d_FWHM_26T2300_18nm_ver_L = d_um_26T2300_18nm_ver_L / FWHM_um_26T2300_18nm_ver_L;
 d_sigma_B_26T2300_18nm_ver_L = d_um_26T2300_18nm_ver_L / sigma_B_um_26T2300_18nm_ver_L;
-xi_um_26T2300_18nm_ver_L = [ 455.3644, 680.2117, 780.5904, 794.6978, 779.6730, 1.0671e+03, 802.8734 ];
+%xi_um_26T2300_18nm_ver_L = [ 455.3644, 680.2117, 780.5904, 794.6978, 779.6730, 1.0671e+03, 802.8734 ];
+xi_um_26T2300_18nm_ver_L = [ 455.3644, 680.2117, 780.5904, 732, 779.6730, 1.0671e+03, 802.8734 ];
 for i=1:length(xi_um_26T2300_18nm_ver_L)
     zeta_26T2300_18nm_ver_L(i) = globalcoherence(xi_um_26T2300_18nm_ver_L(i), sigma_B_um_26T2300_18nm_ver_L);
 end
@@ -200,9 +202,10 @@ zeta_27T1529_8nm_ver_L_std = nanstd(zeta_27T1529_8nm_ver_L);
 % horizontally:
 sigma_B_um_27T1529_8nm_hor_L = 739; % before measurements
 %sigma_B_um_27T1529_8nm_hor_L = 720.5; % after measurements
+sigma_B = sigma_B_um_27T1529_8nm_hor_L;
 FWHM_um_27T1529_8nm_hor_L = 0.5887*4*sigma_B_um_27T1529_8nm_hor_L;
 %wavelength_nm = 8.0; pixis_centerx_px = 524; pixis_centery_px = 488; Sigma_um = 24; Sigma_um_min=20; Sigma_um_max=30; d_um = 107; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0107um (2c-Nb197) ap5=7.0 ap7=50.0 (bg2ab-Nb197)/FLASH2_USER1-2017-11-27T1101.h5_ph_2c_d_107.0_E_041.38_average.mat'));
-%wavelength_nm = 8.0; pixis_centerx_px = 685; pixis_centery_px = 490; Sigma_um = 16; Sigma_um_min=10; Sigma_um_max=35; d_um = 215; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0215um (3c#1-none) ap5=7.0 ap7=50.0 (bg3cd-none)/FLASH2_USER1-2017-11-27T1101.h5_ph_3c#1_d_215.0_E_037.60_average.mat'));
+wavelength_nm = 8.0; pixis_centerx_px = 685; pixis_centery_px = 490; Sigma_um = 16; Sigma_um_min=1; Sigma_um_max=35; d_um = 215; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0215um (3c#1-none) ap5=7.0 ap7=50.0 (bg3cd-none)/FLASH2_USER1-2017-11-27T1101.h5_ph_3c#1_d_215.0_E_037.60_average.mat'));
 %wavelength_nm = 8.0; pixis_centerx_px = 570; pixis_centery_px = 480; Sigma_um = 13; Sigma_um_min=10; Sigma_um_max=35; d_um = 890; load(strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0890um (2d#1-Nb197) ap5=7.0 ap7=50.0 (bg2ab-Nb197)/FLASH2_USER1-2017-11-27T1101.h5_ph_2d#1_d_890.0_E_039.84_average.mat'));
 d_um_27T1529_8nm_hor_L = [ 107, 215, NaN, 890 ];
 d_FWHM_27T1529_8nm_hor_L = d_um_27T1529_8nm_hor_L / FWHM_um_27T1529_8nm_hor_L;
@@ -681,12 +684,12 @@ weight(I_pixis<0.2e-2) = 0;  % why?
 readout = [];
 %
 %Sigma_um = [50:50:600];
-%Sigma_um = 28;
+%Sigma_um = 18;
 %Sigma_um_min = 27;
 %Sigma_um_max = 27;
 %Sigma_um_array = [Sigma_um-5:1:Sigma_um+2];
-%Sigma_um_array = [Sigma_um_min:1:Sigma_um_max];
-Sigma_um_array = [Sigma_um];
+Sigma_um_array = [Sigma_um_min:1:Sigma_um_max];
+%Sigma_um_array = [Sigma_um];
 %
 
 if run_sigma_scan == true
@@ -711,14 +714,15 @@ if run_sigma_scan == true
         corr_I_pixis_I_rec(i) = corr2(I_pixis,I_rec(:,:,i));
 
 
-        %--- determine coherence length \xi as the sigma of the vertical lineout of abs(gamma)
+        %--- determine coherence length \xi as the rms width sigma of the vertical lineout of abs(gamma)
 
         % abs(gamma_rec):
         abs_gamma(:,:,i) = norm_function(abs(gamma_rec(:,:,i)));
 
         % lineout at pinhole plate position
         x = Y2_axis*R_1;
-        y = abs_gamma(:,round(n/2+1),i);  % vertical lineout of abs(gamma)
+        y_ver = abs_gamma(:,round(n/2+1),i);  % vertical lineout of abs(gamma)
+        y_hor = abs_gamma(round(n/2+1),:,i).';  % horizontal lineout of abs(gamma)
 
         % fit Gaussian:
         options = fitoptions('gauss1');
@@ -726,30 +730,35 @@ if run_sigma_scan == true
         options.Lower = [1 0 0];
         options.Upper = [1 0 Inf];
         % do the fit:
-        [f, G, O] = fit(x.',y,'gauss1')
+        [f, G, O] = fit(x.',y_ver,'gauss1')
         f_coeff = coeffvalues(f);
-        % coherence length \xi is the sigma of the fitted Gaussian:
-        xi_um(i) = f_coeff(3)/sqrt(2);
+        % coherence length \xi is the rms width sigma of the fitted Gaussian:
+        xi_um_ver(i) = f_coeff(3)/sqrt(2);
+		
+		[f, G, O] = fit(x.',y_hor,'gauss1')
+        f_coeff = coeffvalues(f);
+        % coherence length \xi is the rms width sigma of the fitted Gaussian:
+        xi_um_hor(i) = f_coeff(3)/sqrt(2);
+		
+		zeta_um(i) = globalcoherence(xi_um_hor(i), sigma_B);
 
 
         %--- determine a Gaussian fit F_gamma_rec2 of F_gamma_rec (to quantify F_gamma_rec)
         x = Y1_axis*R_1;
-        y = F_gamma_rec(:,round(n/2+1),i);
+        y_ver = F_gamma_rec(:,round(n/2+1),i);
+		y_hor = F_gamma_rec(round(n/2+1),:,i);
 
         options = fitoptions('gauss1');
         options.Lower = [1 0 0];
         options.Upper = [1 0 Inf];
-        [f, G, O] = fit(x.',y,'gauss1',options)
+        [f, G, O] = fit(x.',y_hor.','gauss1',options)
         f_coeff = coeffvalues(f);
-        Sigma_rec2_um(i) = f_coeff(3)/sqrt(2);
+        Sigma_rec2_um_hor(i) = f_coeff(3)/sqrt(2);
 
-        y_hor = F_gamma_rec(round(n/2+1),:,i).'; % make a horizontal lineout of F_gamma_rec
-        % it's only one or two pixel wide for the lineout ...
+        Sigma_rec2_hor = Sigma_rec2_um_hor(i) * 1e-6;
+        F_gamma_rec2_hor(:,:,i) = GAUSS(X_1,Y_1,Sigma_rec2_hor); % Gaussian based on fit on horizontal lineout of F_gamma_rec
 
-        Sigma_rec2 = Sigma_rec2_um(i) * 1e-6;
-        F_gamma_rec2(:,:,i) = GAUSS(X_1,Y_1,Sigma_rec2); % Gaussian based on fit on horizontal lineout of F_gamma_rec
-
-        F_gamma_rec2(:,:,i) = norm_function(F_gamma_rec2(:,:,i));
+        F_gamma_rec2_hor(:,:,i) = norm_function(F_gamma_rec2_hor(:,:,i));
 
 
         %--- convolve reconstructed fully coherent Intensity I_rec with the found F_gamma_rec to check with the original measurement data
@@ -778,37 +787,41 @@ if run_sigma_scan == true
     end
 end
 %%
-figure('rend', 'painters','pos', [10 10 500 1500]);
+figure('rend', 'painters','pos', [100 100 500 1500]);
 
-nrows = 6;
+nrows = 7;
 subplot(nrows,1,1)
 plot(Sigma_um_array,corr_I_pixis_I_rec,'-xb');
-xlabel('\sigma/um'), ylabel('corr_I_pixis_I_rec');
+xlabel('\sigma/um'), ylabel('corr\_I\_pixis\_I\_rec');
 
 subplot(nrows,1,2)
-plot(Sigma_um_array,xi_um,'-xb');
+plot(Sigma_um_array,xi_um_hor,'-xb');
 xlabel('\sigma/um'), ylabel('coherence length \xi / um');
 
 subplot(nrows,1,3)
-plot(Sigma_um_array,Sigma_rec2_um,'-xb');
-xlabel('\sigma/um'), ylabel('Sigma of F(\gamma)');
+plot(Sigma_um_array,zeta_um,'-xb');
+xlabel('\sigma/um'), ylabel('norm. degree of tr. coherence \zeta / um');
 
 subplot(nrows,1,4)
+plot(Sigma_um_array,Sigma_rec2_um_hor,'-xb');
+xlabel('\sigma/um'), ylabel('Sigma of F(\gamma)');
+
+subplot(nrows,1,5)
 plot(Sigma_um_array,D,'-xb');
 xlabel('\sigma/um'), ylabel('Distance between histograms');
 
-subplot(nrows,1,5)
-plot(Sigma_um_array,corr_I_pixis_I_pc_rec,'-xb');
-xlabel('\sigma/um'), ylabel('{corr_I_pixis_I_pc_rec}');
-
 subplot(nrows,1,6)
+plot(Sigma_um_array,corr_I_pixis_I_pc_rec,'-xb');
+xlabel('\sigma/um'), ylabel('{corr\_I\_pixis\_I\_pc\_rec}');
+
+subplot(nrows,1,7)
 plot(Sigma_um_array,I_rec_profile_min,'-xb');
 xlabel('\sigma/um'), ylabel('minimum of reconstructed Profile');
 
 %% pick the Sigma_um by hand, where I_rec_profile_min becomes 0 or is minimal
-%Sigma_um = 25;  % change it here, otherwise use the value defined above
+Sigma_um = 10;  % change it here, otherwise use the value defined above
 i = find(Sigma_um_array==Sigma_um)
-xi_um(i)
+xi_um_hor(i)
 
 %%
 % figure(2);
@@ -838,23 +851,44 @@ xlabel('x/um'), ylabel('y/um');
 %%
 figure('rend', 'painters','pos', [1010 10 500 1500]);
 
-subplot(3,1,1);
+subplot(4,1,1);
 imagesc(X1_axis*R_1,Y1_axis*R_1,F_gamma_rec(:,:,i)); colormap(gca,jet); title(strcat('recovered F(\gamma) at CCD, \sigma=',num2str(Sigma_um_array(i)),'um',', iter=',num2str(iter),', \lambda = ',num2str(wavelength_nm),'nm', ', d=',num2str(d_um),'um'));colorbar; axis equal tight;
 xlabel('x/um'), ylabel('y/um');
 
-subplot(3,1,2);
-imagesc(X2_axis*R_1,Y2_axis*R_1,abs_gamma(:,:,i)); colormap(gca,jet); title(strcat('recovered abs(\gamma) at Pinholes, xi=',num2str(xi_um(i)),'um'));colorbar; axis equal tight;
+subplot(4,1,2);
+imagesc(X2_axis*R_1,Y2_axis*R_1,abs_gamma(:,:,i)); colormap(gca,jet); title(strcat('recovered abs(\gamma) at Pinholes, xi=',num2str(xi_um_hor(i)),'um'));colorbar; axis equal tight;
 xlabel('x/um'), ylabel('y/um');
 
 
 % lineout at pinhole plate position
-subplot(3,1,3)
+subplot(4,1,3)
+x = Y2_axis*R_1;
+%y = abs_gamma(:,round(n/2+1),i);  % vertical lineout of abs(gamma)
+y = abs_gamma(round(n/2+1),:,i);  % horizontal lineout of abs(gamma)
+% missing fit!
+sigma = xi_um_hor(i);
+fit = exp(-(x.^2)/(2*sigma^2));
+plot(x,y);
+hold on
+plot(x,fit);
+hold off
+xlabel('x/um'), ylabel('abs(\gamma)_{rec}');
+title(strcat('recovered abs(\gamma) at Pinholes, xi=',num2str(xi_um_hor(i)),'um'));
+
+% lineout at pinhole plate position
+subplot(4,1,4)
 x = Y2_axis*R_1;
 y = abs_gamma(:,round(n/2+1),i);  % vertical lineout of abs(gamma)
+%y = abs_gamma(round(n/2+1),:,i);  % horizontal lineout of abs(gamma)
 % missing fit!
+sigma = xi_um_ver(i);
+fit = exp(-(x.^2)/(2*sigma^2));
 plot(x,y);
-xlabel('x/um'), ylabel('abs(\gamma)_{rec}');
-
+hold on
+plot(x,fit);
+hold off
+xlabel('y/um'), ylabel('abs(\gamma)_{rec}');
+title(strcat('recovered abs(\gamma) at Pinholes, xi=',num2str(xi_um_ver(i)),'um'));
 
 
 %% histogram comparison between orginal image and reconstructed partially coherent image
@@ -931,7 +965,7 @@ plot(X1_axis*R_1,I_rec_profile(:,:,i),'-r', 'LineWidth',1);
 hold off
 %legend('I_{pc,data}','I_{c,rec}','FontSize', 24);
 legend({'partially coherent measurement','fully coherent reconstruction'});
-title(strcat('\lambda = ',num2str(wavelength_nm),'nm', ', separation d=',num2str(d_um),'um, ', ' coherence length \xi=',num2str(round(xi_um(i),1)),'um'));
+title(strcat('\lambda = ',num2str(wavelength_nm),'nm', ', separation d=',num2str(d_um),'um, ', ' coherence length \xi=',num2str(round(xi_um_hor(i),1)),'um'));
 xlim([-6500,6500])
 xlabel('detector position / um')
 ylabel('Intensity / a.u.')
