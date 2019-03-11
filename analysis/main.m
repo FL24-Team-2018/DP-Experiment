@@ -71,6 +71,7 @@ run_sigma_scan = true;
 
 %%% 2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA
 % vertically: FWHM approx 3mm
+dataset = '26T2300_18nm_ver_L';
 sigma_B_um_26T2300_18nm_ver_L = 704.25; % before measurements
 %sigma_B_um_26T2300_18nm_ver_L = 644.75; % after measurements
 sigma_B = sigma_B_um_26T2300_18nm_ver_L;
@@ -95,6 +96,7 @@ zeta_26T2300_18nm_ver_L_mean = nanmean(zeta_26T2300_18nm_ver_L);
 zeta_26T2300_18nm_ver_L_std = nanstd(zeta_26T2300_18nm_ver_L);
 
 % horizontally:  FWHM approx 2mm
+dataset = '26T2300_18nm_hor_L';
 sigma_B_um_26T2300_18nm_hor_L = 863; % before measurements
 %sigma_B_um_26T2300_18nm_hor_L = 817; % after measurements
 FWHM_um_26T2300_18nm_hor_L = 0.5887*4*sigma_B_um_26T2300_18nm_hor_L;
@@ -740,7 +742,7 @@ if run_sigma_scan == true
         % coherence length \xi is the rms width sigma of the fitted Gaussian:
         xi_um_hor(i) = f_coeff(3)/sqrt(2);
 		
-		zeta_um(i) = globalcoherence(xi_um_hor(i), sigma_B);
+		zeta(i) = globalcoherence(xi_um_hor(i), sigma_B);
 
 
         %--- determine a Gaussian fit F_gamma_rec2 of F_gamma_rec (to quantify F_gamma_rec)
@@ -799,7 +801,7 @@ plot(Sigma_um_array,xi_um_hor,'-xb');
 xlabel('\sigma/um'), ylabel('coherence length \xi / um');
 
 subplot(nrows,1,3)
-plot(Sigma_um_array,zeta_um,'-xb');
+plot(Sigma_um_array,zeta,'-xb');
 xlabel('\sigma/um'), ylabel('norm. degree of tr. coherence \zeta / um');
 
 subplot(nrows,1,4)
@@ -818,8 +820,12 @@ subplot(nrows,1,7)
 plot(Sigma_um_array,I_rec_profile_min,'-xb');
 xlabel('\sigma/um'), ylabel('minimum of reconstructed Profile');
 
+folder = 'gfx/test/';
+mkdir(folder);
+saveas(gcf,fullfile(cd,folder,'measures_of_reconstruction'),'epsc');
+
 %% pick the Sigma_um by hand, where I_rec_profile_min becomes 0 or is minimal
-Sigma_um = 10;  % change it here, otherwise use the value defined above
+%Sigma_um = 10;  % change it here, otherwise use the value defined above
 i = find(Sigma_um_array==Sigma_um)
 xi_um_hor(i)
 
@@ -955,21 +961,26 @@ axis equal tight;
 
 
 %% lineouts of partially coherent measurement and fully coherent reconstruction
-figure('rend', 'painters','pos', [10 10 1500 1100]);
-deltay = 25;
-I_pixis_profile = norm_function(mean(I_pixis(idx_row-deltay:idx_row+deltay,:)));
-min(I_pixis_profile(round(n/2)-200:round(n/2)+200))
-plot(X1_axis*R_1,I_pixis_profile,'-b', 'LineWidth',3);
-hold on
-plot(X1_axis*R_1,I_rec_profile(:,:,i),'-r', 'LineWidth',1);
-hold off
-%legend('I_{pc,data}','I_{c,rec}','FontSize', 24);
-legend({'partially coherent measurement','fully coherent reconstruction'});
-title(strcat('\lambda = ',num2str(wavelength_nm),'nm', ', separation d=',num2str(d_um),'um, ', ' coherence length \xi=',num2str(round(xi_um_hor(i),1)),'um'));
-xlim([-6500,6500])
-xlabel('detector position / um')
-ylabel('Intensity / a.u.')
+for i=1:length(Sigma_um_array)
+    figure('rend', 'painters','pos', [10 10 1500 1100],'visible','off');
+    deltay = 25;
+    I_pixis_profile = norm_function(mean(I_pixis(idx_row-deltay:idx_row+deltay,:)));
+    min(I_pixis_profile(round(n/2)-200:round(n/2)+200))
+    plot(X1_axis*R_1,I_pixis_profile,'-b', 'LineWidth',3);
+    hold on
+    plot(X1_axis*R_1,I_rec_profile(:,:,i),'-r', 'LineWidth',1);
+    hold off
+    %legend('I_{pc,data}','I_{c,rec}','FontSize', 24);
+    legend({'partially coherent measurement','fully coherent reconstruction'});
+    title(strcat('\lambda = ',num2str(wavelength_nm),'nm', ', separation d=',num2str(d_um),'um, ', ' coherence length \xi=',num2str(round(xi_um_hor(i),1)),'um', ' \zeta=',num2str(round(zeta(i),2))));
+    xlim([-6500,6500])
+    xlabel('detector position / um')
+    ylabel('Intensity / a.u.')
 
+    folder = 'gfx/test/';
+    mkdir(folder);
+    saveas(gcf,fullfile(cd,folder,strcat('profiles_',num2str(Sigma_um_array(i)))),'epsc');
+end
 
 %% pinhole image
 figure('rend', 'painters','pos', [510 510 1000 1000]);
