@@ -1,4 +1,4 @@
-function plot_results()
+%function plot_results()
 
 %% plot the coherence length and coherence degree over the pinhole separation
 figure('rend', 'painters','pos', [10 10 1000 1000]);
@@ -193,4 +193,4 @@ ylim([0 0.8]); xlim([7 19]);
 xlabel('wavelength / nm'), ylabel('\zeta');
 title('total normalized degree of transverse coherence \zeta = \zeta_{x} \cdot \zeta_{y}');
 
-end
+%end
