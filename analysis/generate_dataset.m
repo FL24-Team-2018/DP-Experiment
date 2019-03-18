@@ -1,4 +1,4 @@
-function dataset = generate_dataset()
+%function dataset = generate_dataset()
 
 %% paths of processed files from jupyter script, pinhole separations, etc ...
 
@@ -80,31 +80,31 @@ dataset(1).measurement(3).d_um = 322;
 dataset(1).measurement(3).pixis_centerx_px = 398;
 dataset(1).measurement(3).pixis_centery_px = 496;
 dataset(1).measurement(3).datafile=strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0322um (4a) ap5=7.0 ap7=50.0 (bg4cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_4a_d_322.0_E_047.82_average.mat');
-dataset(1).measurement(3).sigma_est_um = 22;
+dataset(1).measurement(3).sigma_est_um = 23;
 dataset(1).measurement(3).sigma_est_min_um = 18;
 dataset(1).measurement(3).sigma_est_max_um = 35;
 dataset(1).measurement(4).d_um = 707;
 dataset(1).measurement(4).pixis_centerx_px = 448;
 dataset(1).measurement(4).pixis_centery_px = 489;
 dataset(1).measurement(4).datafile=strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0707um (1b) ap5=7.0 ap7=50.0 (bg1ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_1b_d_707.0_E_047.97_average.mat');
-dataset(1).measurement(4).sigma_est_um = 27;
+dataset(1).measurement(4).sigma_est_um = 34;
 dataset(1).measurement(4).sigma_est_min_um = 22;
 dataset(1).measurement(4).sigma_est_max_um = 35;
 dataset(1).measurement(5).d_um = 890;
 dataset(1).measurement(5).pixis_centerx_px = 425;
 dataset(1).measurement(5).pixis_centery_px = 556;
 dataset(1).measurement(5).datafile=strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 0890um (2b) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_2b_d_890.0_E_048.17_average.mat');
-dataset(1).measurement(5).sigma_est_um = 22;
+dataset(1).measurement(5).sigma_est_um = 28;
 dataset(1).measurement(5).sigma_est_min_um = 18;
 dataset(1).measurement(5).sigma_est_max_um = 35;
-dataset(1).measurement(6).d_um = 1047;
+dataset(1).measurement(6).d_um = 1047; % no pinhole image?
 dataset(1).measurement(6).pixis_centerx_px = 355;
 dataset(1).measurement(6).pixis_centery_px = 500;
 dataset(1).measurement(6).datafile=strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 1047um (3b) ap5=7.0 ap7=50.0 (bg3ab#2) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_3b_d_1047.0_E_047.92_average.mat');
 dataset(1).measurement(6).sigma_est_um = 23;
 dataset(1).measurement(6).sigma_est_min_um = 20;
 dataset(1).measurement(6).sigma_est_max_um = 35;
-dataset(1).measurement(7).d_um = 1335;
+dataset(1).measurement(7).d_um = 1335; % bad background?
 dataset(1).measurement(7).pixis_centerx_px = 493;
 dataset(1).measurement(7).pixis_centery_px = 500;
 dataset(1).measurement(7).datafile=strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 1335um (4b) ap5=7.0 ap7=50.0 (bg4cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_4b_d_1335.0_E_047.91_average.mat');
@@ -118,6 +118,7 @@ sigma_B_um_26T2300_18nm_ver_L = dataset(1).sigma_B_um;
 d_sigma_B_26T2300_18nm_ver_L = d_um_26T2300_18nm_ver_L / sigma_B_um_26T2300_18nm_ver_L;
 %xi_um_26T2300_18nm_ver_L = [ 455.3644, 680.2117, 780.5904, 794.6978, 779.6730, 1.0671e+03, 802.8734 ];
 xi_um_26T2300_18nm_ver_L = [ 455.3644, 680.2117, 780.5904, 732, 779.6730, 1.0671e+03, 802.8734 ];
+%[dataset_results.measurement.xi_um_hor]
 for i=1:length(xi_um_26T2300_18nm_ver_L)
     zeta_26T2300_18nm_ver_L(i) = globalcoherence(xi_um_26T2300_18nm_ver_L(i), sigma_B_um_26T2300_18nm_ver_L);
 end
@@ -162,10 +163,10 @@ dataset(2).measurement(5).d_um = 1047;
 dataset(2).measurement(5).pixis_centerx_px = 502;
 dataset(2).measurement(5).pixis_centery_px = 429;
 dataset(2).measurement(5).datafile=strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 1047um (3d) ap5=7.0 ap7=50.0 (bg3ab#1) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_3d_d_1047.0_E_047.86_average.mat');
-dataset(2).measurement(5).sigma_est_um = 15;
+dataset(2).measurement(5).sigma_est_um = 16;
 dataset(2).measurement(5).sigma_est_min_um = 10;
 dataset(2).measurement(5).sigma_est_max_um = 20;
-dataset(2).measurement(6).d_um = 1335; %%% chopered data!
+dataset(2).measurement(6).d_um = 1335; %%% chopered data! cannot reach I_rec_min = 0
 dataset(2).measurement(6).pixis_centerx_px = 470;
 dataset(2).measurement(6).pixis_centery_px = 430;
 dataset(2).measurement(6).datafile=strcat(datapath,'2017-11-26T1916 18.0nm 70uJ 7Und. KOAS=PMMA 1335um (4d) ap5=7.0 ap7=50.0 (bg4cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T1916.h5_ph_4d_d_1335.0_E_047.92_average.mat');
@@ -199,7 +200,7 @@ dataset(3).measurement(1).d_um = 50;
 dataset(3).measurement(1).pixis_centerx_px = 455;
 dataset(3).measurement(1).pixis_centery_px = 487;
 dataset(3).measurement(1).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0050um (1a) ap5=7.0 ap7=1.5 (bg1ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_1a_d_50.0_E_047.74_average.mat');
-dataset(3).measurement(1).sigma_est_um = 63;
+dataset(3).measurement(1).sigma_est_um = 64;
 dataset(3).measurement(1).sigma_est_min_um = 50;
 dataset(3).measurement(1).sigma_est_max_um = 68;
 dataset(3).measurement(2).d_um = 107; %%?
@@ -213,13 +214,13 @@ dataset(3).measurement(3).d_um = 215; %%?
 dataset(3).measurement(3).pixis_centerx_px = 438;
 dataset(3).measurement(3).pixis_centery_px = 444;
 dataset(3).measurement(3).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0215um (3a) ap5=7.0 ap7=50.0 (bg3ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_3a_d_215.0_E_047.79_average.mat');
-dataset(3).measurement(3).sigma_est_um = 30;
+dataset(3).measurement(3).sigma_est_um = 31;
 dataset(3).measurement(3).sigma_est_min_um = 26;
 dataset(3).measurement(3).sigma_est_max_um = 33;
 dataset(3).measurement(4).d_um = 322;
 dataset(3).measurement(4).pixis_centerx_px = 476;
 dataset(3).measurement(4).pixis_centery_px = 488;
-dataset(3).measurement(4).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0322um (4a) ap5=7.0 ap7=1.5 (bg4ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_4a_d_322.0_E_047.64_average.mat')
+dataset(3).measurement(4).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0322um (4a) ap5=7.0 ap7=1.5 (bg4ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_4a_d_322.0_E_047.64_average.mat');
 dataset(3).measurement(4).sigma_est_um = 43;
 dataset(3).measurement(4).sigma_est_min_um = 39;
 dataset(3).measurement(4).sigma_est_max_um = 46;
@@ -227,17 +228,17 @@ dataset(3).measurement(5).d_um = 445;
 dataset(3).measurement(5).pixis_centerx_px = 476;
 dataset(3).measurement(5).pixis_centery_px = 488;
 dataset(3).measurement(5).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0445um (5a) ap5=7.0 ap7=1.5 (bg5ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_5a_d_445.0_E_047.64_average.mat');
-dataset(3).measurement(5).sigma_est_um = 51;
+dataset(3).measurement(5).sigma_est_um = 46;
 dataset(3).measurement(5).sigma_est_min_um = 38;
 dataset(3).measurement(5).sigma_est_max_um = 55;
-dataset(3).measurement(6).d_um = 707;
+dataset(3).measurement(6).d_um = 707; % I_rec_min does not reach 0
 dataset(3).measurement(6).pixis_centerx_px = 455;
 dataset(3).measurement(6).pixis_centery_px = 472;
 dataset(3).measurement(6).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0707um (1b) ap5=7.0 ap7=1.5 (bg1ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_1b_d_707.0_E_047.84_average.mat');
 dataset(3).measurement(6).sigma_est_um = 51;
-dataset(3).measurement(6).sigma_est_min_um = 38;
+dataset(3).measurement(6).sigma_est_min_um = 30;
 dataset(3).measurement(6).sigma_est_max_um = 55;
-dataset(3).measurement(7).d_um = 890;
+dataset(3).measurement(7).d_um = 890; % I_rec_min does not reach 0
 dataset(3).measurement(7).pixis_centerx_px = 374;
 dataset(3).measurement(7).pixis_centery_px = 483;
 dataset(3).measurement(7).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0890um (2b) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T2300.h5_ph_2b_d_890.0_E_047.93_average.mat');
@@ -279,7 +280,7 @@ dataset(4).measurement(2).d_um = 215;
 dataset(4).measurement(2).pixis_centerx_px = 522;
 dataset(4).measurement(2).pixis_centery_px = 494;
 dataset(4).measurement(2).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0215um (3c) ap5=7.0 ap7=1.5 (bg3ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_3c_d_215.0_E_047.70_average.mat');
-dataset(4).measurement(2).sigma_est_um = 25;
+dataset(4).measurement(2).sigma_est_um = 26;
 dataset(4).measurement(2).sigma_est_min_um = 20;
 dataset(4).measurement(2).sigma_est_max_um = 30;
 dataset(4).measurement(3).d_um = 322;
@@ -300,21 +301,21 @@ dataset(4).measurement(5).d_um = 707;
 dataset(4).measurement(5).pixis_centerx_px = 374;
 dataset(4).measurement(5).pixis_centery_px = 476;
 dataset(4).measurement(5).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0707um (1d#2) ap5=7.0 ap7=1.5 (bg1ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_1d#2_d_707.0_E_047.84_average.mat');
-dataset(4).measurement(5).sigma_est_um = 23;
+dataset(4).measurement(5).sigma_est_um = 24;
 dataset(4).measurement(5).sigma_est_min_um = 20;
 dataset(4).measurement(5).sigma_est_max_um = 26;
 dataset(4).measurement(6).d_um = 890;
 dataset(4).measurement(6).pixis_centerx_px = 374;
 dataset(4).measurement(6).pixis_centery_px = 467;
 dataset(4).measurement(6).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 0890um (2d) ap5=7.0 ap7=50.0 (bg2ab) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-26T2300.h5_ph_2d_d_890.0_E_047.88_average.mat');
-dataset(4).measurement(6).sigma_est_um = 27;
+dataset(4).measurement(6).sigma_est_um = 28;
 dataset(4).measurement(6).sigma_est_min_um = 10;
 dataset(4).measurement(6).sigma_est_max_um = 35;
 dataset(4).measurement(7).d_um = 1047;
 dataset(4).measurement(7).pixis_centerx_px = 530;
 dataset(4).measurement(7).pixis_centery_px = 490;
 dataset(4).measurement(7).datafile=strcat(datapath,'2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm 1047um (3d) ap5=7.0 ap7=1.5 (bg3ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-26T2300.h5_ph_3d_d_1047.0_E_047.67_average.mat');
-dataset(4).measurement(7).sigma_est_um = 21;
+dataset(4).measurement(7).sigma_est_um = 22;
 dataset(4).measurement(7).sigma_est_min_um = 15;
 dataset(4).measurement(7).sigma_est_max_um = 35;
 dataset(4).measurement(8).d_um = 1335;
@@ -370,7 +371,7 @@ dataset(5).measurement(2).d_um = 322;
 dataset(5).measurement(2).pixis_centerx_px = 508;
 dataset(5).measurement(2).pixis_centery_px = 410;
 dataset(5).measurement(2).datafile=strcat(datapath,'2017-11-27T1101 8.0nm 45uJ 12Und. KOAS=_mm 0322um (4a-none) ap5=7.0 ap7=50.0 (bg3cd-none)/FLASH2_USER1-2017-11-27T1101.h5_ph_4a_d_322.0_E_041.64_average.mat');
-dataset(5).measurement(2).sigma_est_um = 24;
+dataset(5).measurement(2).sigma_est_um = 25;
 dataset(5).measurement(2).sigma_est_min_um = 10;
 dataset(5).measurement(2).sigma_est_max_um = 35;
 
@@ -450,7 +451,7 @@ dataset(7).measurement(2).d_um = 322;
 dataset(7).measurement(2).pixis_centerx_px = 533;
 dataset(7).measurement(2).pixis_centery_px = 441;
 dataset(7).measurement(2).datafile=strcat(datapath,'2017-11-27T1529 8.0nm 45uJ 12Und. KOAS=PMMA 0322um (4a) ap5=7.0 ap7=50.0 (bg3cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-27T1529.h5_ph_4a_d_322.0_E_039.39_average.mat')
-dataset(7).measurement(2).sigma_est_um = 27;
+dataset(7).measurement(2).sigma_est_um = 34;
 dataset(7).measurement(2).sigma_est_min_um = 10;
 dataset(7).measurement(2).sigma_est_max_um = 40;
 dataset(7).measurement(3).d_um = 445;
@@ -502,7 +503,7 @@ dataset(8).measurement(3).d_um = 707;
 dataset(8).measurement(3).pixis_centerx_px = 501;
 dataset(8).measurement(3).pixis_centery_px = 528;
 dataset(8).measurement(3).datafile=strcat(datapath,'2017-11-27T1529 8.0nm 45uJ 12Und. KOAS=PMMA 0707um (1d) ap5=7.0 ap7=50.0 (bg1cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-27T1529.h5_ph_1d_d_707.0_E_040.91_average.mat');
-dataset(8).measurement(3).sigma_est_um = 21;
+dataset(8).measurement(3).sigma_est_um = 19;
 dataset(8).measurement(3).sigma_est_min_um = 10;
 dataset(8).measurement(3).sigma_est_max_um = 35;
 
@@ -550,41 +551,41 @@ dataset(9).measurement(1).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ
 dataset(9).measurement(1).sigma_est_um = 30;
 dataset(9).measurement(1).sigma_est_min_um = 15;
 dataset(9).measurement(1).sigma_est_max_um = 35;
-dataset(9).measurement(2).d_um = 215;
+dataset(9).measurement(2).d_um = 215; % no file ?????
 dataset(9).measurement(2).pixis_centerx_px = 473;
 dataset(9).measurement(2).pixis_centery_px = 490;
 dataset(9).measurement(2).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0215um (3a#3) ap5=7.0 ap7=1.5 (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_3a#3_d_215.0_E_111.81_average.mat');
 dataset(9).measurement(2).sigma_est_um = 22;
 dataset(9).measurement(2).sigma_est_min_um = 15;
 dataset(9).measurement(2).sigma_est_max_um = 35;
-dataset(9).measurement(3).d_um = 322; %??
+dataset(9).measurement(3).d_um = 322; %?? deconvblind not working for sigma_est_um=35
 dataset(9).measurement(3).pixis_centerx_px = 464;
 dataset(9).measurement(3).pixis_centery_px = 580;
 dataset(9).measurement(3).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0322um (4a#3) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_4a#3_d_322.0_E_105.60_average.mat');
-dataset(9).measurement(3).sigma_est_um = 20;
+dataset(9).measurement(3).sigma_est_um = 33; % 34 does not show up? weird normalization?
 dataset(9).measurement(3).sigma_est_min_um = 15;
-dataset(9).measurement(3).sigma_est_max_um = 35; % 23 makes problems
-dataset(9).measurement(4).d_um = 322;
+dataset(9).measurement(3).sigma_est_max_um = 34; 
+dataset(9).measurement(4).d_um = 322; % 23 makes problems, minima of right hand side of profile would become zero, problem with background?
 dataset(9).measurement(4).pixis_centerx_px = 492;
 dataset(9).measurement(4).pixis_centery_px = 520;
 dataset(9).measurement(4).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0322um (4a#4) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_4a#4_d_322.0_E_109.94_average.mat');
 dataset(9).measurement(4).sigma_est_um = 20;
-dataset(9).measurement(4).sigma_est_min_um = 13;
-dataset(9).measurement(4).sigma_est_max_um = 30;
+dataset(9).measurement(4).sigma_est_min_um = 18;
+dataset(9).measurement(4).sigma_est_max_um = 22;
 dataset(9).measurement(5).d_um = 445;
 dataset(9).measurement(5).pixis_centerx_px = 500;
 dataset(9).measurement(5).pixis_centery_px = 500;
 dataset(9).measurement(5).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0445um (5a#03) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm (bg5cd) ap5=8.8 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_5a#03_d_445.0_E_109.75_average.mat');
 dataset(9).measurement(5).sigma_est_um = 20;
 dataset(9).measurement(5).sigma_est_min_um = 15;
-dataset(9).measurement(5).sigma_est_max_um = 28;
+dataset(9).measurement(5).sigma_est_max_um = 23;
 dataset(9).measurement(6).d_um = 707;
 dataset(9).measurement(6).pixis_centerx_px = 500;
 dataset(9).measurement(6).pixis_centery_px = 500;
 dataset(9).measurement(6).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0707um (1b) ap5=7.0 ap7=1.5 2017-11-26T2300 13.5nm 111uJ 12Und. KOAS=1.5mm (bg1ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-29T1007.h5_ph_1b#3_d_707.0_E_107.02_average.mat');
-dataset(9).measurement(6).sigma_est_um = 28;
+dataset(9).measurement(6).sigma_est_um = 29;
 dataset(9).measurement(6).sigma_est_min_um = 15;
-dataset(9).measurement(6).sigma_est_max_um = 31;
+dataset(9).measurement(6).sigma_est_max_um = 32;
 dataset(9).measurement(7).d_um = 890;
 dataset(9).measurement(7).pixis_centerx_px = 480;
 dataset(9).measurement(7).pixis_centery_px = 480;
@@ -592,11 +593,11 @@ dataset(9).measurement(7).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ
 dataset(9).measurement(7).sigma_est_um = 29;
 dataset(9).measurement(7).sigma_est_min_um = 15;
 dataset(9).measurement(7).sigma_est_max_um = 38;
-dataset(9).measurement(8).d_um = 890; %??
+dataset(9).measurement(8).d_um = 890; 
 dataset(9).measurement(8).pixis_centerx_px = 480;
 dataset(9).measurement(8).pixis_centery_px = 480;
 dataset(9).measurement(8).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0890um (2b#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2b#4_d_890.0_E_112.95_average.mat');
-dataset(9).measurement(8).sigma_est_um = 22;
+dataset(9).measurement(8).sigma_est_um = 23;
 dataset(9).measurement(8).sigma_est_min_um = 15;
 dataset(9).measurement(8).sigma_est_max_um = 28;
 dataset(9).measurement(9).d_um = 1047;
@@ -628,21 +629,21 @@ dataset(10).measurement(1).d_um = 107;
 dataset(10).measurement(1).pixis_centerx_px = 532;
 dataset(10).measurement(1).pixis_centery_px = 550;
 dataset(10).measurement(1).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0107um (2c#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2c#2_d_107.0_E_112.92_average.mat');
-dataset(10).measurement(1).sigma_est_um = 29;
-dataset(10).measurement(1).sigma_est_min_um = 10;
-dataset(10).measurement(1).sigma_est_max_um = 35;
-dataset(10).measurement(2).d_um = 215;
+dataset(10).measurement(1).sigma_est_um = 60;
+dataset(10).measurement(1).sigma_est_min_um = 40;
+dataset(10).measurement(1).sigma_est_max_um = 60;
+dataset(10).measurement(2).d_um = 215; 
 dataset(10).measurement(2).pixis_centerx_px = 557;
 dataset(10).measurement(2).pixis_centery_px = 530;
 dataset(10).measurement(2).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0215um (3c#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_3c#2_d_215.0_E_107.29_average.mat');
-dataset(10).measurement(2).sigma_est_um = 25;
+dataset(10).measurement(2).sigma_est_um = 24; % higher than 24 creates flat I_rec ????
 dataset(10).measurement(2).sigma_est_min_um = 10;
 dataset(10).measurement(2).sigma_est_max_um = 35;
 dataset(10).measurement(3).d_um = 322;
 dataset(10).measurement(3).pixis_centerx_px = 430;
 dataset(10).measurement(3).pixis_centery_px = 500;
 dataset(10).measurement(3).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0445um (5c#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm (bg5cd) ap5=8.8 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_5c#2_d_445.0_E_113.85_average.mat');
-dataset(10).measurement(3).sigma_est_um = 21;
+dataset(10).measurement(3).sigma_est_um = 20;
 dataset(10).measurement(3).sigma_est_min_um = 10;
 dataset(10).measurement(3).sigma_est_max_um = 35;
 dataset(10).measurement(4).d_um = 445;
@@ -656,14 +657,14 @@ dataset(10).measurement(5).d_um = 707;
 dataset(10).measurement(5).pixis_centerx_px = 480;
 dataset(10).measurement(5).pixis_centery_px = 520;
 dataset(10).measurement(5).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0707um (1d) ap5=7.0 ap7=1.5 2017-11-26T2300 18.0nm 70uJ 7Und. KOAS=1.5mm (bg1ab) ap5=7.0 ap7=1.5/FLASH2_USER1-2017-11-29T1007.h5_ph_1d#2_d_707.0_E_113.17_average.mat');
-dataset(10).measurement(5).sigma_est_um = 21;
+dataset(10).measurement(5).sigma_est_um = 26;
 dataset(10).measurement(5).sigma_est_min_um = 10;
 dataset(10).measurement(5).sigma_est_max_um = 35;
 dataset(10).measurement(6).d_um = 890;
 dataset(10).measurement(6).pixis_centerx_px = 500;
 dataset(10).measurement(6).pixis_centery_px = 500;
 dataset(10).measurement(6).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA 0890um (2d#2) ap5=7.0 ap7=1.5 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2d#2_d_890.0_E_115.11_average.mat');
-dataset(10).measurement(6).sigma_est_um = 21;
+dataset(10).measurement(6).sigma_est_um = 22;
 dataset(10).measurement(6).sigma_est_min_um = 10;
 dataset(10).measurement(6).sigma_est_max_um = 35;
 dataset(10).measurement(7).d_um = 1047;
@@ -715,7 +716,7 @@ dataset(11).measurement(3).d_um = 107;
 dataset(11).measurement(3).pixis_centerx_px = 545;
 dataset(11).measurement(3).pixis_centery_px = 470;
 dataset(11).measurement(3).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0107um (2a#2) ap5=8.8 ap7=3.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm (bg2ab#2) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2a#2_d_107.0_E_111.65_average.mat');
-dataset(11).measurement(3).sigma_est_um = 36;
+dataset(11).measurement(3).sigma_est_um = 37;
 dataset(11).measurement(3).sigma_est_min_um = 10;
 dataset(11).measurement(3).sigma_est_max_um = 40;
 dataset(11).measurement(4).d_um = 215;
@@ -736,10 +737,10 @@ dataset(11).measurement(6).d_um = 322;
 dataset(11).measurement(6).pixis_centerx_px = 486;
 dataset(11).measurement(6).pixis_centery_px = 520;
 dataset(11).measurement(6).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0322um (4a#1) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_4a#1_d_322.0_E_107.45_average.mat');
-dataset(11).measurement(6).sigma_est_um = 37;
+dataset(11).measurement(6).sigma_est_um = 40;
 dataset(11).measurement(6).sigma_est_min_um = 15;
 dataset(11).measurement(6).sigma_est_max_um = 40;
-dataset(11).measurement(7).d_um = 322;
+dataset(11).measurement(7).d_um = 322; %??
 dataset(11).measurement(7).pixis_centerx_px = 526;
 dataset(11).measurement(7).pixis_centery_px = 523;
 dataset(11).measurement(7).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0322um (4a#2) ap5=8.8 ap7=3.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_4a#2_d_322.0_E_110.23_average.mat');
@@ -778,18 +779,18 @@ dataset(12).measurement(1).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111u
 dataset(12).measurement(1).sigma_est_um = 15;
 dataset(12).measurement(1).sigma_est_min_um = 10;
 dataset(12).measurement(1).sigma_est_max_um = 25;
-dataset(12).measurement(2).d_um = 107; %%%?
+dataset(12).measurement(2).d_um = 107; %%%? at he fringe
 dataset(12).measurement(2).pixis_centerx_px = 558;
 dataset(12).measurement(2).pixis_centery_px = 490;
 dataset(12).measurement(2).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0107um (2c#1) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg2ab#1) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_2c#1_d_107.0_E_104.53_average.mat');
-dataset(12).measurement(2).sigma_est_um = 23;
-dataset(12).measurement(2).sigma_est_min_um = 15;
-dataset(12).measurement(2).sigma_est_max_um = 40;
+dataset(12).measurement(2).sigma_est_um = 60;
+dataset(12).measurement(2).sigma_est_min_um = 30;
+dataset(12).measurement(2).sigma_est_max_um = 60;
 dataset(12).measurement(3).d_um = 215;
 dataset(12).measurement(3).pixis_centerx_px = 489;
 dataset(12).measurement(3).pixis_centery_px = 520;
 dataset(12).measurement(3).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0215um (3c#1) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=PMMA (bg3ab) ap5=7.0 ap7=3.0/FLASH2_USER1-2017-11-29T1007.h5_ph_3c#1_d_215.0_E_103.47_average.mat');
-dataset(12).measurement(3).sigma_est_um = 31;
+dataset(12).measurement(3).sigma_est_um = 32;
 dataset(12).measurement(3).sigma_est_min_um = 15;
 dataset(12).measurement(3).sigma_est_max_um = 40;
 dataset(12).measurement(4).d_um = 322;
@@ -810,7 +811,7 @@ dataset(12).measurement(6).d_um = 707;
 dataset(12).measurement(6).pixis_centerx_px = 556;
 dataset(12).measurement(6).pixis_centery_px = 500;
 dataset(12).measurement(6).datafile=strcat(datapath,'2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm 0707um (1d#0) ap5=7.0 ap7=50.0 2017-11-29T1007 13.5nm 111uJ 12Und. KOAS=1.5mm (bg1cd) ap5=7.0 ap7=50.0/FLASH2_USER1-2017-11-29T1007.h5_ph_1d#0_d_707.0_E_106.39_average.mat');
-dataset(12).measurement(6).sigma_est_um = 33;
+dataset(12).measurement(6).sigma_est_um = 34;
 dataset(12).measurement(6).sigma_est_min_um = 15;
 dataset(12).measurement(6).sigma_est_max_um = 40;
 
@@ -850,4 +851,4 @@ zeta_29T1007_13p5nm_hor_std = nanstd([zeta_29T1007_13p5nm_hor_S,zeta_29T1007_13p
 zeta_29T1007_13p5nm_mean = zeta_29T1007_13p5nm_ver_mean * zeta_29T1007_13p5nm_hor_mean;
 zeta_29T1007_13p5nm_error = zeta_29T1007_13p5nm_mean *( zeta_29T1007_13p5nm_hor_std/zeta_29T1007_13p5nm_hor_mean + zeta_29T1007_13p5nm_ver_std/zeta_29T1007_13p5nm_ver_mean ) ;
 
-end
+%end
