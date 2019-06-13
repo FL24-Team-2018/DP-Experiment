@@ -1,4 +1,4 @@
-function [I_pixis,pixis_image_norm,n,idx_row,idx_col,gamma_rec,F_gamma_rec,I_pc_rec,I_rec,sigma_F_gamma_rec_hor_um,I_rec_profile,I_rec_profile_min,sigma_B_um,zeta,D,pixis_image_norm_hist,corr_I_pixis_I_pc_rec,abs_gamma,xi_um_hor,xi_um_ver,X1_axis,Y1_axis,X2_axis,Y2_axis,R_1,iter,pinholes_image_norm,sigma_est_um_opt] = run_deconvolution(dataset_name,d_um,datafile,pixis_centerx_px,pixis_centery_px,wavelength_nm,sigma_B_um,sigma_est_min_um,sigma_est_max_um,sigma_est_um,sigma_est_um_array)
+function [I_pixis,pixis_image_norm,n,idx_row,idx_col,gamma_rec,F_gamma_rec,I_pc_rec,I_rec,sigma_F_gamma_rec_hor_um,I_rec_profile,I_rec_profile_min,sigma_B_um,zeta,D,pixis_image_norm_hist,corr_I_pixis_I_pc_rec,abs_gamma,xi_um_hor,xi_um_ver,X1_axis,Y1_axis,X2_axis,Y2_axis,R_1,iter,sigma_est_um_opt] = run_deconvolution(dataset_name,d_um,datafile,pixis_centerx_px,pixis_centery_px,wavelength_nm,sigma_B_um,sigma_est_min_um,sigma_est_max_um,sigma_est_um,sigma_est_um_array)
 
 load(datafile);
 %%
