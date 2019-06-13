@@ -1,0 +1,233 @@
+\begin{thebibliography}{10}
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem{Ploenjes2016}
+E.~Plönjes, B.~Faatz, M.~Kuhlmann, and R.~Treusch, \enquote{{FLASH}2:
+  Operation, beamlines, and photon diagnostics,}  (Author(s), 2016).
+
+\bibitem{Chapman2006}
+H.~N. Chapman, A.~Barty, M.~J. Bogan, S.~Boutet, M.~Frank, S.~P. Hau-Riege,
+  S.~Marchesini, B.~W. Woods, S.~Bajt, W.~H. Benner, R.~A. London, E.~Plönjes,
+  M.~Kuhlmann, R.~Treusch, S.~Düsterer, T.~Tschentscher, J.~R. Schneider,
+  E.~Spiller, T.~Möller, C.~Bostedt, M.~Hoener, D.~A. Shapiro, K.~O. Hodgson,
+  D.~van~der Spoel, F.~Burmeister, M.~Bergh, C.~Caleman, G.~Huldt, M.~M.
+  Seibert, F.~R. N.~C. Maia, R.~W. Lee, A.~Szöke, N.~Timneanu, and J.~Hajdu,
+  \enquote{Femtosecond diffractive imaging with a soft-x-ray free-electron
+  laser,} {\protect\JournalTitle{Nature Physics}} \textbf{2}, 839--843 (2006).
+
+\bibitem{WilliamsQuineyPeeleEtAl2007}
+G.~J. Williams, H.~M. Quiney, A.~G. Peele, and K.~A. Nugent, \enquote{Coherent
+  diffractive imaging and partial coherence,} {\protect\JournalTitle{Physical
+  Review B}} \textbf{75}, 104102 (2007).
+
+\bibitem{Abbey2008}
+B.~Abbey, K.~A. Nugent, G.~J. Williams, J.~N. Clark, A.~G. Peele, M.~A.
+  Pfeifer, M.~de~Jonge, and I.~McNulty, \enquote{Keyhole coherent diffractive
+  imaging,} {\protect\JournalTitle{Nature Physics}} \textbf{4}, 394--398
+  (2008).
+
+\bibitem{Gutt2009}
+C.~Gutt, L.-M. Stadler, S.~Streit-Nierobisch, A.~P. Mancuso, A.~Schropp,
+  B.~Pfau, C.~M. Günther, R.~Könnecke, J.~Gulden, B.~Reime, J.~Feldhaus,
+  E.~Weckert, I.~A. Vartanyants, O.~Hellwig, F.~Staier, R.~Barth, M.~Grunze,
+  A.~Rosenhahn, D.~Stickler, H.~Stillrich, R.~Frömter, H.~P. Oepen,
+  M.~Martins, T.~Nisius, T.~Wilhein, B.~Faatz, N.~Guerassimova, K.~Honkavaara,
+  V.~Kocharyan, R.~Treusch, E.~Saldin, S.~Schreiber, E.~A. Schneidmiller, M.~V.
+  Yurkov, S.~Eisebitt, and G.~Grübel, \enquote{Resonant magnetic scattering
+  with soft x-ray pulses from a free-electron laser operating at 1.59 nm,}
+  {\protect\JournalTitle{Physical Review B}} \textbf{79} (2009).
+
+\bibitem{Seibert2011}
+M.~M. Seibert, T.~Ekeberg, F.~R. N.~C. Maia, M.~Svenda, J.~Andreasson,
+  O.~Jönsson, D.~Odi{\'{c}}, B.~Iwan, A.~Rocker, D.~Westphal, M.~Hantke, D.~P.
+  DePonte, A.~Barty, J.~Schulz, L.~Gumprecht, N.~Coppola, A.~Aquila, M.~Liang,
+  T.~A. White, A.~Martin, C.~Caleman, S.~Stern, C.~Abergel, V.~Seltzer, J.-M.
+  Claverie, C.~Bostedt, J.~D. Bozek, S.~Boutet, A.~A. Miahnahri,
+  M.~Messerschmidt, J.~Krzywinski, G.~Williams, K.~O. Hodgson, M.~J. Bogan,
+  C.~Y. Hampton, R.~G. Sierra, D.~Starodub, I.~Andersson, S.~Bajt,
+  M.~Barthelmess, J.~C.~H. Spence, P.~Fromme, U.~Weierstall, R.~Kirian,
+  M.~Hunter, R.~B. Doak, S.~Marchesini, S.~P. Hau-Riege, M.~Frank, R.~L.
+  Shoeman, L.~Lomb, S.~W. Epp, R.~Hartmann, D.~Rolles, A.~Rudenko, C.~Schmidt,
+  L.~Foucar, N.~Kimmel, P.~Holl, B.~Rudek, B.~Erk, A.~Hömke, C.~Reich,
+  D.~Pietschner, G.~Weidenspointner, L.~Strüder, G.~Hauser, H.~Gorke,
+  J.~Ullrich, I.~Schlichting, S.~Herrmann, G.~Schaller, F.~Schopper, H.~Soltau,
+  K.-U. Kühnel, R.~Andritschke, C.-D. Schröter, F.~Krasniqi, M.~Bott,
+  S.~Schorb, D.~Rupp, M.~Adolph, T.~Gorkhover, H.~Hirsemann, G.~Potdevin,
+  H.~Graafsma, B.~Nilsson, H.~N. Chapman, and J.~Hajdu, \enquote{Single
+  mimivirus particles intercepted and imaged with an x-ray laser,}
+  {\protect\JournalTitle{Nature}} \textbf{470}, 78--81 (2011).
+
+\bibitem{Zuerch2017}
+M.~Zürch, R.~Jung, C.~Späth, J.~Tümmler, A.~Guggenmos, D.~Attwood,
+  U.~Kleineberg, H.~Stiel, and C.~Spielmann, \enquote{Transverse coherence
+  limited coherent diffraction imaging using a molybdenum soft x-ray laser
+  pumped at moderate pump energies,} {\protect\JournalTitle{Scientific
+  Reports}} \textbf{7} (2017).
+
+\bibitem{Huang2018}
+C.-F. Huang, K.~S. Liang, T.-L. Hsu, T.-T. Lee, Y.-Y. Chen, S.-M. Yang, H.-H.
+  Chen, S.-H. Huang, W.-H. Chang, T.-K. Lee, P.~Chen, K.-E. Peng, C.-C. Chen,
+  C.-Z. Shi, Y.-F. Hu, G.~Margaritondo, T.~Ishikawa, C.-H. Wong, and Y.~Hwu,
+  \enquote{Free-electron-laser coherent diffraction images of individual
+  drug-carrying liposome particles in solution,}
+  {\protect\JournalTitle{Nanoscale}} \textbf{10}, 2820--2824 (2018).
+
+\bibitem{Giewekemeyer2019}
+K.~Giewekemeyer, A.~Aquila, N.-T.~D. Loh, Y.~Chushkin, K.~S. Shanks, J.~Weiss,
+  M.~W. Tate, H.~T. Philipp, S.~Stern, P.~Vagovic, M.~Mehrjoo, C.~Teo,
+  M.~Barthelmess, F.~Zontone, C.~Chang, R.~C. Tiberio, A.~Sakdinawat, G.~J.
+  Williams, S.~M. Gruner, and A.~P. Mancuso, \enquote{Experimental 3d coherent
+  diffractive imaging from photon-sparse random projections,}
+  {\protect\JournalTitle{{IUCrJ}}} \textbf{6}, 357--365 (2019).
+
+\bibitem{Eisebitt2004}
+S.~Eisebitt, J.~Lüning, W.~F. Schlotter, M.~Lörgen, O.~Hellwig, W.~Eberhardt,
+  and J.~Stöhr, \enquote{Lensless imaging of magnetic nanostructures by x-ray
+  spectro-holography,} {\protect\JournalTitle{Nature}} \textbf{432}, 885--888
+  (2004).
+
+\bibitem{Streit-Nierobisch2009}
+S.~Streit-Nierobisch, D.~Stickler, C.~Gutt, L.-M. Stadler, H.~Stillrich,
+  C.~Menk, R.~Frömter, C.~Tieg, O.~Leupold, H.~P. Oepen, and G.~Grübel,
+  \enquote{Magnetic soft x-ray holography study of focused ion beam-patterned
+  co/pt multilayers,} {\protect\JournalTitle{Journal of Applied Physics}}
+  \textbf{106}, 083909 (2009).
+
+\bibitem{Schaffert2013}
+S.~Schaffert, B.~Pfau, J.~Geilhufe, C.~M. Günther, M.~Schneider, C.~von
+  Korff~Schmising, and S.~Eisebitt, \enquote{High-resolution magnetic-domain
+  imaging by fourier transform holography at 21 nm wavelength,}
+  {\protect\JournalTitle{New Journal of Physics}} \textbf{15}, 093042 (2013).
+
+\bibitem{Stickler2010}
+D.~Stickler, R.~Frömter, H.~Stillrich, C.~Menk, C.~Tieg, S.~Streit-Nierobisch,
+  M.~Sprung, C.~Gutt, L.-M. Stadler, O.~Leupold, G.~Grübel, and H.~P. Oepen,
+  \enquote{Soft x-ray holographic microscopy,} {\protect\JournalTitle{Applied
+  Physics Letters}} \textbf{96}, 042501 (2010).
+
+\bibitem{Lider2015}
+V.~V. Lider, \enquote{X-ray holography,}
+  {\protect\JournalTitle{Physics-Uspekhi}} \textbf{58}, 365--383 (2015).
+
+\bibitem{Rodenburg2007}
+J.~M. Rodenburg, A.~C. Hurst, A.~G. Cullis, B.~R. Dobson, F.~Pfeiffer, O.~Bunk,
+  C.~David, K.~Jefimovs, and I.~Johnson, \enquote{Hard-x-ray lensless imaging
+  of extended objects,} {\protect\JournalTitle{Physical Review Letters}}
+  \textbf{98} (2007).
+
+\bibitem{Bunk2008}
+O.~Bunk, M.~Dierolf, S.~Kynde, I.~Johnson, O.~Marti, and F.~Pfeiffer,
+  \enquote{Influence of the overlap parameter on the convergence of the
+  ptychographical iterative engine,} {\protect\JournalTitle{Ultramicroscopy}}
+  \textbf{108}, 481--487 (2008).
+
+\bibitem{RoseSkopintsevDzhigaevEtAl2015}
+M.~Rose, P.~Skopintsev, D.~Dzhigaev, O.~Gorobtsov, T.~Senkbeil, A.~v. Gundlach,
+  T.~Gorniak, A.~Shabalin, J.~Viefhaus, A.~Rosenhahn \emph{et~al.},
+  \enquote{Water window ptychographic imaging with characterized coherent
+  x-rays,} {\protect\JournalTitle{Journal of synchrotron radiation}}
+  \textbf{22}, 819--827 (2015).
+
+\bibitem{Pfeiffer2017}
+F.~Pfeiffer, \enquote{X-ray ptychography,} {\protect\JournalTitle{Nature
+  Photonics}} \textbf{12}, 9--17 (2017).
+
+\bibitem{Gruebel2007}
+G.~Grübel, G.~Stephenson, C.~Gutt, H.~Sinn, and T.~Tschentscher,
+  \enquote{{XPCS} at the european x-ray free electron laser facility,}
+  {\protect\JournalTitle{Nuclear Instruments and Methods in Physics Research
+  Section B: Beam Interactions with Materials and Atoms}} \textbf{262},
+  357--367 (2007).
+
+\bibitem{Gutt2008}
+C.~Gutt, L.-M. Stadler, A.~Duri, T.~Autenrieth, O.~Leupold, Y.~Chushkin, and
+  G.~Grübel, \enquote{Measuring temporal speckle correlations at ultrafast
+  x-ray sources,} {\protect\JournalTitle{Optics Express}} \textbf{17}, 55
+  (2008).
+
+\bibitem{Hruszkewycz2012}
+S.~O. Hruszkewycz, M.~Sutton, P.~H. Fuoss, B.~Adams, S.~Rosenkranz, K.~F.
+  Ludwig, W.~Roseker, D.~Fritz, M.~Cammarata, D.~Zhu, S.~Lee, H.~Lemke,
+  C.~Gutt, A.~Robert, G.~Grübel, and G.~B. Stephenson, \enquote{High contrast
+  x-ray speckle from atomic-scale order in liquids and glasses,}
+  {\protect\JournalTitle{Physical Review Letters}} \textbf{109} (2012).
+
+\bibitem{Roseker2018}
+W.~Roseker, S.~O. Hruszkewycz, F.~Lehmkühler, M.~Walther,
+  H.~Schulte-Schrepping, S.~Lee, T.~Osaka, L.~Strüder, R.~Hartmann,
+  M.~Sikorski, S.~Song, A.~Robert, P.~H. Fuoss, M.~Sutton, G.~B. Stephenson,
+  and G.~Grübel, \enquote{Towards ultrafast dynamics with split-pulse x-ray
+  photon correlation spectroscopy at free electron laser sources,}
+  {\protect\JournalTitle{Nature Communications}} \textbf{9} (2018).
+
+\bibitem{Zhang2018}
+Q.~Zhang, E.~M. Dufresne, and A.~R. Sandy, \enquote{Dynamics in hard condensed
+  matter probed by x-ray photon correlation spectroscopy: Present and beyond,}
+  {\protect\JournalTitle{Current Opinion in Solid State and Materials Science}}
+  \textbf{22}, 202--212 (2018).
+
+\bibitem{Huang:2013nka}
+Z.~Huang, \enquote{{Brightness and Coherence of Synchrotron Radiation and
+  FELs},} in \emph{{Proceedings, 4th International Particle Accelerator
+  Conference (IPAC 2013): Shanghai, China, May 12-17, 2013},}  (2013), p.
+  MOYCB101.
+
+\bibitem{BagschikFroemterMuellerEtAl2016a}
+K.~Bagschik, R.~Fr\"{o}mter, L.~M\"{u}ller, W.~Roseker, J.~Bach, P.~Staeck,
+  C.~Th\"{o}nni{\ss}en, S.~Schleitzer, M.~H. Berntsen, C.~Weier, R.~Adam,
+  J.~Viefhaus, C.~M. Schneider, G.~Gr\"{u}bel, and H.~P. Oepen,
+  \enquote{Spatial coherence determination from the fourier analysis of a
+  resonant soft x-ray magnetic speckle pattern,} {\protect\JournalTitle{Optics
+  Express}} \textbf{24}, 23162--23176 (2016).
+
+\bibitem{Svelto2010}
+O.~Svelto, \emph{Principles of Lasers} (Springer US, 2010).
+
+\bibitem{MandelWolf1995-Opticalcoherencequantum}
+L.~Mandel and E.~Wolf, \emph{Optical coherence and quantum optics} (Cambridge
+  university press, 1995).
+
+\bibitem{Goodman2015-StatisticalOptics2e}
+Goodman, \emph{Statistical Optics 2e} (John Wiley \& Sons, 2015).
+
+\bibitem{BahaaE.A.Saleh2007-FundamentalsPhotonics}
+M.~C.~T. Bahaa E.A.~Saleh, \emph{Fundamentals of Photonics} (Wiley John + Sons,
+  2007).
+
+\bibitem{SingerSorgenfreiMancusoEtAl2012}
+A.~Singer, F.~Sorgenfrei, A.~P. Mancuso, N.~Gerasimova, O.~M. Yefanov,
+  J.~Gulden, T.~Gorniak, T.~Senkbeil, A.~Sakdinawat, Y.~Liu, D.~Attwood,
+  S.~Dziarzhytski, D.~D. Mai, R.~Treusch, E.~Weckert, T.~Salditt, A.~Rosenhahn,
+  W.~Wurth, and I.~A. Vartanyants, \enquote{Spatial and temporal coherence
+  properties of single free-electron laser pulses,}
+  {\protect\JournalTitle{Optics Express}} \textbf{20}, 17480--17495 (2012).
+
+\bibitem{BornWolfBhatia2002-PrinciplesOptics}
+M.~Born, E.~Wolf, and A.~B. Bhatia, \emph{Principles of Optics} (Cambridge
+  University Pr., 2002).
+
+\bibitem{Paganin2006}
+D.~Paganin, \emph{Coherent X-Ray Optics}, Oxford Series on Synchrotron
+  Radiation (OUP Oxford, 2006).
+
+\bibitem{VartanyantsRobinson2001}
+I.~A. Vartanyants and I.~K. Robinson, \enquote{Partial coherence effects on the
+  imaging of small crystals using coherent x-ray diffraction,}
+  {\protect\JournalTitle{Journal of Physics: Condensed Matter}} \textbf{13},
+  10593 (2001).
+
+\bibitem{Chalupsky2015PRA}
+J.~Chalupsk\'y, P.~Boh\'a\ifmmode~\check{c}\else \v{c}\fi{}ek, T.~Burian,
+  V.~H\'ajkov\'a, S.~P. Hau-Riege, P.~A. Heimann, L.~Juha, M.~Messerschmidt,
+  S.~P. Moeller, B.~Nagler, M.~Rowen, W.~F. Schlotter, M.~L. Swiggers, J.~J.
+  Turner, and J.~Krzywinski, \enquote{Imprinting a focused x-ray laser beam to
+  measure its full spatial characteristics,} {\protect\JournalTitle{Phys. Rev.
+  Applied}} \textbf{4}, 014004 (2015).
+
+\bibitem{Floeter2010NJoP}
+B.~Flöter, P.~Juranić, S.~Kapitzki, B.~Keitel, K.~Mann, E.~Plönjes,
+  B.~Schäfer, and K.~Tiedtke, \enquote{Euv hartmann sensor for wavefront
+  measurements at the free-electron laser in hamburg,}
+  {\protect\JournalTitle{New Journal of Physics}} \textbf{12}, 083015 (2010).
+
+\end{thebibliography}
