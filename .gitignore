@@ -271,3 +271,9 @@ TSWLatexianTemp*
 *.glstex
 
 # End of https://www.gitignore.io/api/latex
+article/main.aux
+article/main.bbl
+article/main.blg
+article/main.pdf
+article/main.synctex.gz
+article/main.tex
